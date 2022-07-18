@@ -22,39 +22,42 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fa'],
-    path: 'i18n',
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
-      fa: {
-        label: 'فارسی',
-        direction: 'rtl',
-        htmlLang: 'fa-IR',
-        calendar: 'persian',
-        path: 'fa',
-      },
-    },
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'fa'],
+  //   path: 'i18n',
+  //   localeConfigs: {
+  //     en: {
+  //       label: 'English',
+  //       direction: 'ltr',
+  //       htmlLang: 'en-US',
+  //       calendar: 'gregory',
+  //       path: 'en',
+  //     },
+  //     fa: {
+  //       label: 'فارسی',
+  //       direction: 'rtl',
+  //       htmlLang: 'fa-IR',
+  //       calendar: 'persian',
+  //       path: 'fa',
+  //     },
+
+  //   },
+  // },
 
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
+      // '@docusaurus/preset-classic',
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/starboard-ventures/spacescope-document',
+            'https://github.com/starboard-ventures/spacescope-document/tree/main',
         },
         // blog: {
         //   showReadingTime: true,
@@ -63,6 +66,7 @@ const config = {
         //   editUrl:
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
+        blog: false, // 可选：禁用博客插件
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -79,6 +83,7 @@ const config = {
           alt: 'SpaceScope Logo',
           src: 'img/logo.svg',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -86,56 +91,43 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/starboard-ventures/spacescope-document',
-            label: 'GitHub',
+            href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/Starboard_V',
+            className: "header-twitter-link",
+            "aria-label": "Twitter repository",
             position: 'right',
           },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/Starboard_V',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/starboard-ventures/spacescope-document',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with Starboard.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
     }),
+
+  // plugins: [
+  //   [
+  //     require.resolve("@cmfcmf/docusaurus-search-local"),
+  //     {
+  //       // Options here
+  //     },
+  //   ],
+  // ],
 };
 
 module.exports = config;
