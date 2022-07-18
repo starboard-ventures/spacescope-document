@@ -103,6 +103,12 @@ const config = {
             "aria-label": "Twitter repository",
             position: 'right',
           },
+          {
+            href: 'https://observablehq.com/@starboard',
+            className: "header-observable-link",
+            "aria-label": "ObservableHQ repository",
+            position: 'right',
+          },
         ],
       },
       footer: {
