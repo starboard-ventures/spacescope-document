@@ -44,7 +44,10 @@ const config = {
 
   //   },
   // },
-
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh-CN"],
+  },
   presets: [
     [
       'classic',
@@ -79,12 +82,12 @@ const config = {
     ({
       navbar: {
         title: 'SpaceScope',
-        logo: {
-          alt: 'SpaceScope Logo',
-          src: 'img/logo.svg',
-        },
         hideOnScroll: true,
         items: [
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             type: 'doc',
             docId: 'intro',
@@ -125,15 +128,22 @@ const config = {
         },
       },
     }),
+    themes: [
+      [
+        "@easyops-cn/docusaurus-search-local",
+        {
+          hashed: true,
+          language: ["en", "zh"],
+          highlightSearchTermsOnTargetPage: true,
+          explicitSearchResultPath: true,
+          indexDocs:true,
+          indexBlog:false,
+          indexPages:false,
+          docsRouteBasePath:'/'
+        },
+      ],
+    ],
 
-  // plugins: [
-  //   [
-  //     require.resolve("@cmfcmf/docusaurus-search-local"),
-  //     {
-  //       // Options here
-  //     },
-  //   ],
-  // ],
 };
 
 module.exports = config;
