@@ -80,6 +80,23 @@
   height: 20px;
   width: 20px;
 }
+.header-dashboard-link:before {
+  background: url("../../static/img/logo.svg") no-repeat;
+  content: "";
+  display: flex;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+}
+[data-theme="dark"] .header-dashboard-link:before {
+  background: url("../../static/img/logo-dark.svg") no-repeat;
+  content: "";
+  display: flex;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+}
+
 
 .searchHintContainer_Pkmr {
   display: none !important;
@@ -154,4 +171,8 @@ a,
 
 .markdown li+li {
   margin-top: unset
+}
+
+.alert{
+  border-radius: 4px;
 }
