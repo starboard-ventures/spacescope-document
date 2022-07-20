@@ -112,6 +112,12 @@ const config = {
             "aria-label": "ObservableHQ repository",
             position: 'right',
           },
+          {
+            href: 'https://dashboard.starboard.ventures/',
+            className: "header-dashboard-link",
+            "aria-label": "Dashboard repository",
+            position: 'right',
+          },
         ],
       },
       footer: {

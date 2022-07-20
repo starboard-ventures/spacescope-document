@@ -1,30 +1,26 @@
 ## Network Storage Capacity 
 
 
-### Quick links
-
-[![Image text](../static/img/favicon.ico)](https://dashboard.starboard.ventures/capacity-services)
-
 ### DESCRIPTION
 
 The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
-### ObservableHQ LINK
-:::info LINK
+### REQUEST
 
-- [chart-network-storage-capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
-- [chart-network-storage-capacity-with-baseline](https://observablehq.com/@starboard/chart-network-storage-capacity-with-baseline)
+#### REQUEST URL
 
-:::
+```js
+GET: /network_governance/capacity-services/network_storage_capacity
+```
 
-### QUERY PARAMETERS
-| **Variable** | **Type** | **Description**                         | **Default**                  | **Example** |
-| ------------ | -------- | --------------------------------------- | ---------------------------- | ----------- |
-| start_date   | STRING   | Optional. Start date of selected period | The date of the latest data. | 2022-07-01  |
-| end_date     | STRING   | Optional. End date of selected period   | The date of the latest data. | 2022-07-01  |
+#### REQUEST PARAMETERS
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
+| start_date   | STRING   | Optional. Start date of selected period | 2022-07-01  | The date of the latest data. |
+| end_date     | STRING   | Optional. End date of selected period   | 2022-07-01  | The date of the latest data. |
 
 
-### REQUEST EXAMPLE
+#### REQUEST EXAMPLE
 
 <details><summary>Code</summary>
 <div>
@@ -39,7 +35,8 @@ import TabItem from '@theme/TabItem';
   values={[
     { label: 'Python', value: 'Python' },
     { label: 'GO', value: 'GO' },
-    { label: 'NodeJS', value: 'NodeJS' }
+    { label: 'NodeJS', value: 'NodeJS' },
+    { label: 'cURL', value: 'cURL' }
   ]
 }>
 
@@ -122,13 +119,23 @@ request(options, function (error, response) {
 ```
 
 </TabItem>
+<TabItem value="cURL">
 
+```curl
+curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'user_id: 1' \
+--header 'authorization: Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+```
+
+</TabItem>
 </Tabs>
 
 </div>
 </details>
 
-### RESPONSE SCHEMA
+### RESPONSE
+
+#### RESPONSE SCHEMA
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -139,7 +146,7 @@ request(options, function (error, response) {
 | total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
 | new_baseline_power             | NUMERIC  | The baseline power (in bytes) the network is targeting.                                                                                            |
 
-### RESPONSE EXAMPLES
+#### RESPONSE EXAMPLES
 
 <details><summary>Response</summary>
 <div>
@@ -163,3 +170,12 @@ request(options, function (error, response) {
 ```
 </div>
 </details>
+
+
+### ObservableHQ LINK
+:::info LINK
+
+- [chart-network-storage-capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
+- [chart-network-storage-capacity-with-baseline](https://observablehq.com/@starboard/chart-network-storage-capacity-with-baseline)
+
+:::
