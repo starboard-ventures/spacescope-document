@@ -92,37 +92,44 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'API Documentation',
           },
           {
             href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
             className: "header-github-link",
-            "aria-label": "GitHub repository",
+            "title": "GitHub Repository",
             position: 'right',
           },
           {
             href: 'https://twitter.com/Starboard_V',
             className: "header-twitter-link",
-            "aria-label": "Twitter repository",
+            "title": "Twitter Link",
             position: 'right',
           },
           {
             href: 'https://observablehq.com/@starboard',
             className: "header-observable-link",
-            "aria-label": "ObservableHQ repository",
+            "title": "ObservableHQ Link",
             position: 'right',
           },
           {
             href: 'https://dashboard.starboard.ventures/',
             className: "header-dashboard-link",
-            "aria-label": "Dashboard repository",
+            "title": "Network Health Dashboard",
+            position: 'right',
+          },
+          {
+            href: 'https://filecoinproject.slack.com/archives/C03Q3K96BQU',
+            className: "header-slack-link",
+            "title": "Slack",
             position: 'right',
           },
         ],
       },
+      // 
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with Starboard.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with <a href='https://www.starboard.ventures/' target='blank'>Starboard</a>.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -134,21 +141,21 @@ const config = {
         },
       },
     }),
-    themes: [
-      [
-        "@easyops-cn/docusaurus-search-local",
-        {
-          hashed: true,
-          language: ["en", "zh"],
-          highlightSearchTermsOnTargetPage: true,
-          explicitSearchResultPath: true,
-          indexDocs:true,
-          indexBlog:false,
-          indexPages:false,
-          docsRouteBasePath:'/'
-        },
-      ],
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: '/'
+      },
     ],
+  ],
 
 };
 

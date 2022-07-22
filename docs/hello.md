@@ -1,11 +1,10 @@
-## Network Storage Capacity 
+### Network Storage Capacity 
 
 
-### DESCRIPTION
+#### DESCRIPTION
 
 The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
-### REQUEST
 
 #### REQUEST URL
 
@@ -19,6 +18,11 @@ GET: /network_governance/capacity-services/network_storage_capacity
 | start_date   | STRING   | Optional. Start date of selected period | 2022-07-01  | The date of the latest data. |
 | end_date     | STRING   | Optional. End date of selected period   | 2022-07-01  | The date of the latest data. |
 
+:::note
+
+ The difference between end_date and start_date should be smaller than 31 days.
+
+:::
 
 #### REQUEST EXAMPLE
 
@@ -49,7 +53,6 @@ url = "https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-0
 
 payload={}
 headers = {
-  'user_id': '1',
   'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
 }
 
@@ -80,7 +83,6 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("user_id", "1")
   req.Header.Add("authorization", "Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH")
   res, err := client.Do(req)
   if err != nil {
@@ -108,7 +110,6 @@ var options = {
   'method': 'GET',
   'url': 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'user_id': '1',
     'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
   }
 };
@@ -123,7 +124,6 @@ request(options, function (error, response) {
 
 ```curl
 curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
---header 'user_id: 1' \
 --header 'authorization: Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
 ```
 
@@ -133,7 +133,6 @@ curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_
 </div>
 </details>
 
-### RESPONSE
 
 #### RESPONSE SCHEMA
 
@@ -172,7 +171,7 @@ curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_
 </details>
 
 
-### ObservableHQ LINK
+#### ObservableHQ LINK
 :::info LINK
 
 - [chart-network-storage-capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
