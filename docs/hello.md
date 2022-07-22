@@ -1,22 +1,26 @@
-### Network Storage Capacity 
+---
+sidebar_position: 3
+---
+# Demo
+
+### Committed and Expired Pledge
 
 
 #### DESCRIPTION
 
-The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
-
+Pledges that have been committed or expired in the last 24 hours on the Filecoin Network.
 
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/network_storage_capacity
+GET: /network_governance/capacity-services/commit_and_expire_pledge
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
-| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Optional. Start date of selected period | 2022-07-01  | The date of the latest data. |
-| end_date     | STRING   | Optional. End date of selected period   | 2022-07-01  | The date of the latest data. |
+| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
+| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
+| end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
 :::note
 
@@ -49,11 +53,11 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -74,7 +78,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -83,7 +87,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH")
+  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -108,9 +112,9 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
 };
 request(options, function (error, response) {
@@ -123,8 +127,8 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
 </TabItem>
@@ -136,14 +140,18 @@ curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_
 
 #### RESPONSE SCHEMA
 
-| **Variable**                   | **Type** | **Description**                                                                                                                                    |
-| ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date                      | DATE     | Refers to the date that data was recorded.                                                                                                         |
-| total_qa_bytes_power           | NUMERIC  | This parameter measures the consensus power of stored data on the network, and is equal to Raw Byte Power multiplied by Sector Quality Multiplier. |
-| total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality Adjusted Power                                                                                               |
-| total_raw_bytes_power          | NUMERIC  | This measurement is the total size of all sectors in bytes.                                                                                        |
-| total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
-| new_baseline_power             | NUMERIC  | The baseline power (in bytes) the network is targeting.                                                                                            |
+| **Variable**            | **Type** | **Description**                                      |
+| ----------------------- | -------- | ---------------------------------------------------- |
+| stat_date               | DATE     | Refers to the date that data was recorded.           |
+| raw_bytes_gb            | NUMERIC  | Total sector size of miners.(Bytes / 32 GiB)         |
+| commit_pct_qa_adj       | NUMERIC  | Total committed pct verified QAP of miners.          |
+| commit_pledge           | NUMERIC  | Total committed initial pledge of day.               |
+| commit_pledge_per_bytes | NUMERIC  | Total committed initial pledge per raw bytes of day. |
+| commit_pledge_per_qap   | NUMERIC  | Total committed initial pledge per QAP of day.       |
+| expire_pct_qa_adj       | NUMERIC  | Total expired pct verified QAP of miners.            |
+| expire_pledge           | NUMERIC  | Total expired initial pledge of day.                 |
+| expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of day.   |
+| expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of day.         |
 
 #### RESPONSE EXAMPLES
 
@@ -152,17 +160,21 @@ curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_
 
 ```Json
 {
-    "request_id": "4e14a4aa-2368-4029-a660-5a883c0c29f1#606",
+    "request_id": "3c9078ba-dd89-4b0b-84ce-4035964eac3b#653",
     "code": 0,
     "message": "success.",
     "data": [
         {
             "stat_date": "2022-07-01T00:00:00Z",
-            "total_qa_bytes_power": 20431876696867700000,
-            "total_qa_bytes_power_increase": 18811787931090944,
-            "total_raw_bytes_power": 19307467099059780000,
-            "total_raw_bytes_power_increase": 11360325936873472,
-            "new_baseline_power": 10430930206272310000
+            "raw_bytes_gb": 815642,
+            "commit_pct_qa_adj": 1034803.7599351,
+            "commit_pledge": 175511.807778307,
+            "commit_pledge_per_bytes": 0.215182405734754,
+            "commit_pledge_per_qap": 0.169608784364403,
+            "expire_pct_qa_adj": 260334.185546403,
+            "expire_pledge": 63837.0279158741,
+            "expire_pledge_per_bytes": 0.245526086114569,
+            "expire_pledge_per_qap": 0.245211852534424
         }
     ]
 }
@@ -174,7 +186,8 @@ curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-network-storage-capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
-- [chart-network-storage-capacity-with-baseline](https://observablehq.com/@starboard/chart-network-storage-capacity-with-baseline)
+- [chart-commit-pledge-per-qap](https://observablehq.com/@starboard/chart-commit-pledge-per-qap)
 
 :::
+
+<hr />

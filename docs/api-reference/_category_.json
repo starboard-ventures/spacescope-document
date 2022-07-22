@@ -2,6 +2,7 @@
   "label": "Network Governance",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Data that are aggregated on the level of Filecoin network and provide important metrics to help people understand how the network is doing."
   }
 }
