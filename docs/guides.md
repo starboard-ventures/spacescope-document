@@ -8,7 +8,7 @@ sidebar_position: 2
 
 All HTTP requests made against the SpaceScope API must be validated with an API Token. 
 
-The application for API Token is not open now. Feel free to use the test token `ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH` and play around with the APIs!
+The application for API Token is not open now. Feel free to use the test token `ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq` and play around with the APIs!
 
 ## Quick Start
 
@@ -38,11 +38,11 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -63,7 +63,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -72,7 +72,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH")
+  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -97,9 +97,9 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
 };
 request(options, function (error, response) {
@@ -112,8 +112,8 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://3.12.111.181:8443/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_tWoqipUOaqeStypHFgRrpoleGpjYPgKfDrPH'
+curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
 </TabItem>

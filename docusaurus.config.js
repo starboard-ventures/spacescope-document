@@ -97,19 +97,19 @@ const config = {
           {
             href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
             className: "header-github-link",
-            "title": "GitHub Repository",
+            "title": "GitHub",
             position: 'right',
           },
           {
             href: 'https://twitter.com/Starboard_V',
             className: "header-twitter-link",
-            "title": "Twitter Link",
+            "title": "Twitter",
             position: 'right',
           },
           {
             href: 'https://observablehq.com/@starboard',
             className: "header-observable-link",
-            "title": "ObservableHQ Link",
+            "title": "ObservableHQ",
             position: 'right',
           },
           {
