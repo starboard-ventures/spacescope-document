@@ -23,8 +23,8 @@ GET: /network_governance/capacity-services/network_storage_capacity
 #### REQUEST PARAMETERS
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Optional. Start date of selected period | 2022-07-01  | The date of the latest data. |
-| end_date     | STRING   | Optional. End date of selected period   | 2022-07-01  | The date of the latest data. |
+| start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
+| end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
 :::note
 
@@ -204,8 +204,8 @@ GET: /network_governance/capacity-services/storage_state_d_v2
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -328,7 +328,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | ------------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
 | stat_date                | DATE     | Refers to the date that data was recorded.                                                                |
 | active_fault             | NUMERIC  | The total storage size of outstanding faulted sectors that are not recovered or terminated.               |
-| active_fault_increase    | NUMERIC  | <p>Daily change in active fault size. </p><p></p>                                                         |
+| active_fault_increase    | NUMERIC  | Daily change in active fault size.                                                        |
 | active_fault_avg_d       | NUMERIC  | Average days that a sector fault remains active on the Filecoin Network during the last 24 hours.         |
 | fault_d                  | NUMERIC  | Daily faulty sector size in TiB.                                                                          |
 | recover_d                | NUMERIC  | Daily recovered sector size in TiB.                                                                       |
@@ -337,7 +337,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | net_fault_d              | NUMERIC  | The net fault refers to fault_d - recover_d - term_d                                                      |
 | active_term_d            | NUMERIC  | Sectors that are scheduled to expire but get terminated actively by SPs.                                  |
 | active_term_m            | NUMERIC  | The total storage size of new active terminated sectors in the past 30 days.                              |
-| active_term_m_increase   | NUMERIC  | <p>Daily change in active terminated sectors in the past 30 days.</p><p></p>                              |
+| active_term_m_increase   | NUMERIC  | Daily change in active terminated sectors in the past 30 days.                           |
 | passive_term_d           | NUMERIC  | Sectors that are scheduled to expire but get terminated passively after 42 days.                          |
 | extend_size              | NUMERIC  | Sectors that are scheduled to expire but get extended during the last 24 hours.                           |
 | extend_size_increase     | NUMERIC  | Daily change in sector extension.                                                                         |
@@ -410,8 +410,8 @@ GET: /network_governance/capacity-services/sector_onboarding_by_method
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -591,8 +591,8 @@ GET: /network_governance/capacity-services/prove_commit_split_d_v2
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -964,8 +964,8 @@ GET: /network_governance/capacity-services/network_block_reward
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -1134,8 +1134,8 @@ GET: /network_governance/capacity-services/economics_sector_pledges_returns_32g_
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -1262,9 +1262,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
 | precommit_agg_fil    | NUMERIC  | PreCommitSectorBatch gas fees                                                                        |
 | provecommit_agg_fil  | NUMERIC  | ProveCommitAggregate gas fees                                                                        |
-| window_fil           | NUMERIC  | <p>Refers to window_cost / window_count of </p><p>SubmitWindowedPoSt method fees</p>                 |
+| window_fil           | NUMERIC  | Refers to window_cost / window_count of SubmitWindowedPoSt method fees                |
 | profit               | NUMERIC  | Refers to rewards - precommit_fil - provecommit_fil - window_fil/2349                                |
-| profit_agg           | NUMERIC  | <p>Refers to rewards - precommit_agg_fil - </p><p>provecommit_agg_fil - window_fil/2349</p>          |
+| profit_agg           | NUMERIC  | Refers to rewards - precommit_agg_fil - provecommit_agg_fil - window_fil/2349          |
 | initial_pledge       | NUMERIC  | Refers to Initial Storage Pledge(20 days equivalent of projected rewards) + Initial Consensus Pledge |
 | reward_pledge_return | NUMERIC  | Refers to rewards / initial_pledge                                                                   |
 | post_gas_return      | NUMERIC  | Refers to profit / initial_pledge                                                                    |
@@ -1327,8 +1327,8 @@ GET: /network_governance/capacity-services/economics_sector_pledges_returns_64g_
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
@@ -1454,9 +1454,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
 | precommit_agg_fil    | NUMERIC  | PreCommitSectorBatch gas fees                                                                        |
 | provecommit_agg_fil  | NUMERIC  | ProveCommitAggregate gas fees                                                                        |
-| window_fil           | NUMERIC  | <p>Refers to window_cost / window_count of </p><p>SubmitWindowedPoSt method fees</p>                 |
+| window_fil           | NUMERIC  | Refers to window_cost / window_count of SubmitWindowedPoSt method fees                 |
 | profit               | NUMERIC  | Refers to rewards - precommit_fil - provecommit_fil - window_fil/2349                                |
-| profit_agg           | NUMERIC  | <p>Refers to rewards - precommit_agg_fil - </p><p>provecommit_agg_fil - window_fil/2349</p>          |
+| profit_agg           | NUMERIC  | Refers to rewards - precommit_agg_fil - provecommit_agg_fil - window_fil/2349          |
 | initial_pledge       | NUMERIC  | Refers to Initial Storage Pledge(20 days equivalent of projected rewards) + Initial Consensus Pledge |
 | reward_pledge_return | NUMERIC  | Refers to rewards / initial_pledge                                                                   |
 | post_gas_return      | NUMERIC  | Refers to profit / initial_pledge                                                                    |
@@ -1519,8 +1519,8 @@ GET: /network_governance/capacity-services/commit_and_expire_pledge
 ```
 
 #### REQUEST PARAMETERS
-| **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
-| ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
+| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
+| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
 | end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
 
