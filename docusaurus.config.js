@@ -107,7 +107,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://observablehq.com/@starboard',
+            href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
             className: "header-observable-link",
             "title": "ObservableHQ",
             position: 'right',
