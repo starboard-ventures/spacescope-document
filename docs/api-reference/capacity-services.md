@@ -182,8 +182,8 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-network-storage-capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
-- [chart-network-storage-capacity-with-baseline](https://observablehq.com/@starboard/chart-network-storage-capacity-with-baseline)
+- [Chart: Network Storage Capacity](https://observablehq.com/@starboard/chart-network-storage-capacity)  
+- [Chart: Network Storage Capacity with Baseline](https://observablehq.com/@starboard/chart-network-storage-capacity-with-baseline)
 
 :::
 
@@ -384,12 +384,12 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-daily-active-faults](https://observablehq.com/@starboard/chart-daily-active-faults)
-- [datafield-ssd_active_term_m](https://observablehq.com/@starboard/datafield-ssd_active_term_m)
-- [chart-daily-active-termination](https://observablehq.com/@starboard/chart-daily-active-termination)
-- [chart-daily-sector-extension](https://observablehq.com/@starboard/chart-daily-sector-extension)
-- [chart-change-in-active-faults-breakdown](https://observablehq.com/@starboard/chart-change-in-active-faults-breakdown)
-- [chart-daily-average-days-faulted-of-active-faults](https://observablehq.com/@starboard/chart-daily-average-days-faulted-of-active-faults)
+- [Chart: Daily Active Faults](https://observablehq.com/@starboard/chart-daily-active-faults)
+- [Chart: 30-Day New Active Terminations](https://observablehq.com/@starboard/datafield-ssd_active_term_m)
+- [Chart: Daily Active Termination](https://observablehq.com/@starboard/chart-daily-active-termination)
+- [Chart: Daily Sector Extension](https://observablehq.com/@starboard/chart-daily-sector-extension)
+- [Chart: Change in Active Faults Breakdown](https://observablehq.com/@starboard/chart-change-in-active-faults-breakdown)
+- [Chart: Daily Average Days Faulted of Active Faults](https://observablehq.com/@starboard/chart-daily-average-days-faulted-of-active-faults)
 
 :::
 
@@ -570,7 +570,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-sector-onboarding-breakdown-by-method](https://observablehq.com/@starboard/chart-sector-onboarding-breakdown-by-method)
+- [Chart: Sector Onboarding Breakdown by Method](https://observablehq.com/@starboard/chart-sector-onboarding-breakdown-by-method)
 
 :::
 
@@ -749,7 +749,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-prove-commit-32-64-gib-splits](https://observablehq.com/@starboard/chart-prove-commit-32-64-gib-splits)
+- [Chart: ProveCommit 32/64 GiB Splits](https://observablehq.com/@starboard/chart-prove-commit-32-64-gib-splits)
 
 :::
 
@@ -942,9 +942,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-scheduled-expiration-by-date-breakdown-in-pib](https://observablehq.com/@starboard/chart-scheduled-expiration-by-date-breakdown-in-pib)
-- [chart-scheduled-expiration-by-date-breakdown-in](https://observablehq.com/@starboard/chart-scheduled-expiration-by-date-breakdown-in)
-- [chart-initial-pledge-release-by-scheduled-expiration-fil](https://observablehq.com/@starboard/chart-initial-pledge-release-by-scheduled-expiration-fil)
+- [Chart: Scheduled Expiration by Date Breakdown in PiB](https://observablehq.com/@starboard/chart-scheduled-expiration-by-date-breakdown-in-pib)
+- [Chart: Scheduled Expiration by Date Breakdown in %](https://observablehq.com/@starboard/chart-scheduled-expiration-by-date-breakdown-in)
+- [Chart: Initial Pledge Release by Scheduled Expiration FIL](https://observablehq.com/@starboard/chart-initial-pledge-release-by-scheduled-expiration-fil)
 
 :::
 
@@ -1114,7 +1114,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-network-block-rewards](https://observablehq.com/@starboard/chart-network-block-rewards)
+- [Chart: Network Block Rewards](https://observablehq.com/@starboard/chart-network-block-rewards)
 
 :::
 
@@ -1306,8 +1306,8 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-32gib-sector-pledges-and-returns](https://observablehq.com/@starboard/chart-32gib-sector-pledges-and-returns)
-- [economics-table](https://observablehq.com/@starboard/economics-table)
+- [Chart: 32GiB Sector Pledges and Returns](https://observablehq.com/@starboard/chart-32gib-sector-pledges-and-returns)
+- [Economics Table](https://observablehq.com/@starboard/economics-table)
   
 :::
 
@@ -1498,8 +1498,8 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-64gib-sector-pledges-and-returns](https://observablehq.com/@starboard/chart-64gib-sector-pledges-and-returns)
-- [economics-table](https://observablehq.com/@starboard/economics-table)
+- [Chart: 64GiB Sector Pledges and Returns](https://observablehq.com/@starboard/chart-64gib-sector-pledges-and-returns)
+- [Economics Table](https://observablehq.com/@starboard/economics-table)
 
 :::
 
@@ -1684,6 +1684,6 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 #### ObservableHQ LINK
 :::info LINK
 
-- [chart-commit-pledge-per-qap](https://observablehq.com/@starboard/chart-commit-pledge-per-qap)
+- [Chart: Commit Pledge per QAP](https://observablehq.com/@starboard/chart-commit-pledge-per-qap)
 
 :::
