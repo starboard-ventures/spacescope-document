@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Data that are aggregated on the level of Filecoin network and provide important metrics to help people understand how the network is doing."
+    "description": "Data that provides an overview and important metrics to help people understand how the Filecoin network is doing."
   }
 }
