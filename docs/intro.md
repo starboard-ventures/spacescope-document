@@ -8,11 +8,9 @@ slug: /
 ## Introduction
 **SpaceScope’s API Documentation** empowers you to tap into SpaceScope’s real-time open global data available in real-time and historical, meeting the requirements of software developers, researchers, and analysts alike.
 
-**Network Health Dashboard**  
 See how SpaceScope’s API can be used in a dashboard over [here](https://dashboard.starboard.ventures/). By following the guides and documentation, developers will be able to integrate our APIs easily into their pre-existing or new platform.
 
-**Observables**  
-Visit our [observables website](https://observablehq.com/@starboard/starboard-filecoin-data-index) to find out more on how quickly you can create and deploy your own notebook using our API. Follow our guide and documentation to get started in using our API.
+Visit our [ObservableHQ website](https://observablehq.com/@starboard/starboard-filecoin-data-index) to find out more on how quickly you can create and deploy your own notebook using our API. Follow our guide and documentation to get started in using our API.
 
 ## Endpoint Overview
 The SpaceScope API is divided into several categories: **`Network Governance`**, **`Storage Providers`**, **`Actors`**, etc. **`Network Governance`** is available now.
