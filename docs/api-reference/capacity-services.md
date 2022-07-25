@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Capacity & Services
 
-Data of storage capacity and storage service on the Filecoin Network.
+Capacity and services provides information on the Filecoin Network data storage capacity, services and onboarding process. 
 
 ### Network Storage Capacity 
 
