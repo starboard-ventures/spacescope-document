@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Circulating Supply
 
-Capacity and services provides information on the Filecoin Network data storage capacity, services and onboarding process.
+Circulating supply provides information on the Filecoin Network existing FIL protocol circulation and amount of FIL locked daily.
 
 ### FIL Protocol Circulating Supply
 
