@@ -228,9 +228,6 @@ GET: /network_governance/transactions-usage/gas_fee_overview_h
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -415,9 +412,6 @@ GET: /network_governance/transactions-usage/network_fee_breakdown
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -609,9 +603,6 @@ GET: /network_governance/transactions-usage/gas_usage_msg_d
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -793,8 +784,6 @@ GET: /network_governance/transactions-usage/gas_distribution_d
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -970,9 +959,6 @@ GET: /network_governance/transactions-usage/gas_top_storage_provider_d
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -1147,9 +1133,6 @@ GET: /network_governance/transactions-usage/gas_detail_message_d
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -1345,9 +1328,6 @@ GET: /network_governance/transactions-usage/gas_usage_detail_message_d
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"

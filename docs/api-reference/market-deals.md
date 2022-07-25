@@ -258,9 +258,6 @@ GET: /network_governance/market-deals/deal_summary_statistics_daily
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -476,9 +473,6 @@ GET: /network_governance/market-deals/top10_clients_by_active_deal_bytes
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -651,9 +645,6 @@ GET: /network_governance/market-deals/top10_clients_by_active_deal_count
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -828,9 +819,6 @@ GET: /network_governance/market-deals/top10_clients_by_new_deal_bytes
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -1004,9 +992,6 @@ GET: /network_governance/market-deals/top10_clients_by_new_deal_count
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -1179,9 +1164,6 @@ GET: /network_governance/market-deals/top10_providers_by_active_deal_bytes
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -1357,9 +1339,6 @@ GET: /network_governance/market-deals/top10_providers_by_active_deal_count
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -1533,9 +1512,6 @@ GET: /network_governance/market-deals/top10_providers_by_new_deal_bytes
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -1711,9 +1687,6 @@ GET: /network_governance/market-deals/top10_providers_by_new_deal_count
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -1888,9 +1861,6 @@ GET: /network_governance/market-deals/deal_client_headcount
 <details><summary>Code</summary>
 <div>
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
