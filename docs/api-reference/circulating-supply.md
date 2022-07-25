@@ -295,8 +295,6 @@ GET: /network_governance/circulating-supply/network_locked_fil_breakdown
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
