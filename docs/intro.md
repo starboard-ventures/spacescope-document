@@ -13,7 +13,7 @@ See how SpaceScope’s API can be used in a dashboard over [here](https://dashbo
 Visit our [ObservableHQ website](https://observablehq.com/@starboard/starboard-filecoin-data-index) to find out more on how quickly you can create and deploy your own notebook using our API. Follow our guide and documentation to get started in using our API.
 
 ## Endpoint Overview
-The SpaceScope API is divided into several categories: **`Network Governance`**, **`Storage Providers`**, **`Actors`**, etc. **`Network Governance`** is available now.
+The SpaceScope API is divided into several categories: **`Network Governance`**, **`Storage Providers`**, **`Actors`**, **`Token Flow`** etc. **`Network Governance`** is available now.
 
 
 | **Endpoint Category**                    | **Description**                                                                                                                                                                                         |
