@@ -12,7 +12,7 @@ The application for API Token is not open now. Feel free to use the test token `
 
 ## Quick Start
 
-### QUICK START CODE EXAMPLE
+#### QUICK START CODE EXAMPLE
 
 
 <details open><summary>Code</summary>
@@ -122,7 +122,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </div>
 </details>
 
-### RETURN DATA EXAMPLE
+#### RETURN DATA EXAMPLE
 
 All endpoints return data in JSON format with the results of your query under data if the call is successful.
 
@@ -151,7 +151,7 @@ All endpoints return data in JSON format with the results of your query under da
 
 ## Errors
 
-### HTTP STATUS CODES
+#### HTTP STATUS CODES
 
 The API uses standard HTTP status codes to indicate the success or failure of an API call.
 - **200 (OK)**: Standard response for successful HTTP requests. The actual response will depend on the request method used.
@@ -161,7 +161,7 @@ The API uses standard HTTP status codes to indicate the success or failure of an
 - **502 (Bad Gateway)**:  The server was acting as a gateway or proxy and received an invalid response from the upstream server.
 
 
-### ERROR RESPONSE CODES
+#### ERROR RESPONSE CODES
 
 During error scenarios you may reference the **code** and **message** properties. One of the API error codes below will be returned if applicable.
 
