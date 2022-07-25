@@ -387,7 +387,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | percent_regular_deal_free               | NUMERIC  | Percent of free deal in regular deal.   |
 | percent_verified_deal_free              | NUMERIC  | Percent of free deal in verified deal. |
 | median_regular_deal_price               | BIGINT   | Median of regular deal storage price per TiB month in FIL.               |
-| median_verified_deal_price              | BIGINT   | 截至当日的 verified deal storage price per tib month in FIL.             |
+| median_verified_deal_price              | BIGINT   | Median of verified deal storage price per TiB month in FIL.              |
 
 
 #### RESPONSE EXAMPLES
