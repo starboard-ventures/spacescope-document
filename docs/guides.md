@@ -124,6 +124,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 ### RETURN DATA EXAMPLE
 
+All endpoints return data in JSON format with the results of your query under data if the call is successful.
 
 <details open><summary>Response</summary>
 <div>

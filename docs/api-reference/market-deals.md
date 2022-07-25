@@ -364,30 +364,31 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | **Variable**                            | **Type** | **Description**                                                                                    |
 | :-------------------------------------- | :------- | :------------------------------------------------------------------------------------------------- |
 | stat_date                               | DATE     | Refers to the date that data was recorded.                                           |
-| new_deal_bytes_regular_last_week        | NUMERIC  | 七天内的new regular deal bytes (out of new deal)                                                   |
-| new_deal_bytes_verified_last_week       | NUMERIC  | 七天内的new verified deal bytes (out of new deal)                                                  |
-| max_regular_deal_price_last_week        | NUMERIC  | 七天内最贵的regular deal price in FIL (out of new deal)                                            |
-| max_verified_deal_price_last_week       | NUMERIC  | 七天内最贵的 verified deal price in FIL (out of new deal)                                          |
-| min_regular_deal_price_last_week        | NUMERIC  | 七天内最便宜的regular deal price  in FIL (out of new deal)                                         |
-| min_verified_deal_price_last_week       | NUMERIC  | 七天内最便宜的verified deal price in FIL (out of new deal)                                         |
-| total_regular_deal_count                | BIGINT   | 截至当日的 normal deal 的 deal_id 数量 (out of new deal)                                           |
-| total_verified_deal_count               | BIGINT   | 截至当日的 verified deal 的 deal_id 数量 (out of new deal)                                         |
-| total_regular_deal_bytes                | NUMERIC  | 截至当日的 regular deal size in bytes (out of new deal)                                            |
-| total_verified_deal_bytes               | NUMERIC  | 截至当日的 verified deal size in bytes (out of new deal)                                           |
-| avg_regular_deal_bytes                  | NUMERIC  | 截至当日的平均 regular deal size in bytes (out of new deal)                                        |
-| avg_verified_deal_bytes                 | NUMERIC  | 截至当日的平均 verified deal size in bytes (out of new deal)                                       |
-| total_regular_deal_duration             | NUMERIC  | 截至当日的 regular deal duration (out of new deal)                                                 |
-| total_verified_deal_duration            | NUMERIC  | 截至当日的 verified deal duration (out of new deal)                                                |
-| avg_regular_deal_duration_days          | NUMERIC  | 截至当日的平均 regular deal duration in days (out of new deal)                                     |
-| avg_verified_deal_duration_days         | NUMERIC  | 截至当日的平均 verified deal duration in days (out of new deal)                                    |
-| total_regular_deal_provider_collateral  | NUMERIC  | 截至当日的 regular deal provider collateral in FIL(out of new deal)                                |
-| total_verified_deal_provider_collateral | NUMERIC  | 截至当日的 verified deal provider collateral in FIL(out of new deal)                               |
-| avg_regular_deal_provider_collateral    | BIGINT   | 截至当日的平均 regular deal provider collateral in FIL(out of new deal)                            |
-| avg_verified_deal_provider_collateral   | BIGINT   | 截至当日的平均 verified deal provider collateral in FIL(out of new deal)                           |
-| percent_regular_deal_free               | NUMERIC  | 截至当日的免 storage_price_per_epoch 的 regular deal 占全部 regular deal 比值。(out of new deal)   |
-| percent_verified_deal_free              | NUMERIC  | 截至当日的免 storage_price_per_epoch 的 verified deal 占全部 verified deal 比值。(out of new deal) |
-| median_regular_deal_price               | BIGINT   | 截至当日的 regular deal storage price per tib month in FIL 中位数。(out of new deal)               |
-| median_verified_deal_price              | BIGINT   | 截至当日的 verified deal storage price per tib month in FIL 中位数。(out of new deal)              |
+| new_deal_bytes_regular_last_week        | NUMERIC  | New regular deal bytes last week.                                                   |
+| new_deal_bytes_verified_last_week       | NUMERIC  | New verified deal bytes last week.                                                  |
+| max_regular_deal_price_last_week        | NUMERIC  | Most expensive regular deal price in FIL last week.                                           |
+| max_verified_deal_price_last_week       | NUMERIC  | Most expensive verified deal price in FIL last week.                                         |
+| min_regular_deal_price_last_week        | NUMERIC  | Cheapest regular deal price in FIL last week.                                        |
+| min_verified_deal_price_last_week       | NUMERIC  | Cheapest verified deal price in FIL last week.                                       |
+| total_regular_deal_count                | BIGINT   | Total number of normal deal.                                         |
+| total_verified_deal_count               | BIGINT   | Total number of verified deal.                                         |
+| total_regular_deal_bytes                | NUMERIC  | Total number of regular deal size in bytes.                                           |
+| total_verified_deal_bytes               | NUMERIC  | Total number of verified deal size in bytes.                                           |
+| avg_regular_deal_bytes                  | NUMERIC  | Average regular deal size in bytes.                                      |
+| avg_verified_deal_bytes                 | NUMERIC  | Average verified deal size in bytes.                                       |
+| total_regular_deal_duration             | NUMERIC  | Total regular deal duration.                                                 |
+| total_verified_deal_duration            | NUMERIC  | Total verified deal duration.                                                |
+| avg_regular_deal_duration_days          | NUMERIC  | Average regular deal duration in days.                                     |
+| avg_verified_deal_duration_days         | NUMERIC  | Average verified deal duration in days.                                    |
+| total_regular_deal_provider_collateral  | NUMERIC  | Average regular deal provider collateral in FIL.                               |
+| total_verified_deal_provider_collateral | NUMERIC  | Average verified deal provider collateral in FIL.                             |
+| avg_regular_deal_provider_collateral    | BIGINT   | Average regular deal provider collateral in FIL.                           |
+| avg_verified_deal_provider_collateral   | BIGINT   | Average verified deal provider collateral in FIL.                           |
+| percent_regular_deal_free               | NUMERIC  | Percent of free deal in regular deal.   |
+| percent_verified_deal_free              | NUMERIC  | Percent of free deal in verified deal. |
+| median_regular_deal_price               | BIGINT   | Median of regular deal storage price per TiB month in FIL.               |
+| median_verified_deal_price              | BIGINT   | Median of verified deal storage price per TiB month in FIL.              |
+
 
 #### RESPONSE EXAMPLES
 

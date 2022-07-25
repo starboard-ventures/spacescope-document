@@ -1480,6 +1480,6 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 #### ObservableHQ LINK
 :::info LINK
 
-- [Chart: Daily Gas Detail Message (Average)s](https://observablehq.com/@starboard/datafield-gudmd_latest)  
+- [Chart: Daily Gas Detail Message (Average)](https://observablehq.com/@starboard/datafield-gudmd_latest)  
 
 :::
