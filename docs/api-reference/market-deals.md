@@ -145,11 +145,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | :---------------------------------------- | :------- | :------------------------------------------------------------------------- |
 | stat_date                                 | DATE     | Refers to the date that data was recorded.                     |
 | active_deals_regular_bytes                | NUMERIC  | Active normal deal bytes.                                                  |
-| active_deals_regular_bytes_increase       | NUMERIC  | Daily change in active regular deal bytes; active_deals_regular_bytes(day D) - active_deals_regular_bytes(day D-1).
-   |
+| active_deals_regular_bytes_increase       | NUMERIC  | Daily change in active regular deal bytes; active_deals_regular_bytes(day D) - active_deals_regular_bytes(day D-1).|
 | active_deals_verified_bytes               | NUMERIC  | Active verified deal bytes.                                                |
-| active_deals_verified_bytes_increase      | NUMERIC  | Daily change in active verified deal bytes; active_deals_verified_bytes(day D) - active_deals_verified_bytes(day D-1).
- |
+| active_deals_verified_bytes_increase      | NUMERIC  | Daily change in active verified deal bytes; active_deals_verified_bytes(day D) - active_deals_verified_bytes(day D-1).|
 | active_deals_regular_count                | BIGINT   | Active regular deal count.                                                  |
 | active_deals_verified_count               | BIGINT   | Active verified deal count.                                                |
 | activated_deals_regular_bytes             | NUMERIC  | Activate regular deal bytes.                                                |
