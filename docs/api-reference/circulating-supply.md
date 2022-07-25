@@ -147,7 +147,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | stat_date                      | DATE     | Refers to the date that data was recorded.                                                                                                         |
 | circulating_fil           | NUMERIC  | The amount of FIL circulating and tradeable in the economy. The basis for Market Cap calculations. |
-| circulating_fil_increase  | NUMERIC  | circulating_fil (day D) - circulating_fil (day D-1). Power                                                                                               |
+| circulating_fil_increase  | NUMERIC  | circulating_fil (day D) - circulating_fil (day D-1).                                                                                                |
 | mined_fil          | NUMERIC  | The amount of FIL that has been mined by storage miners.                                                                                        |
 | mined_fil_increase | NUMERIC  | mined_fil (day D) - mined_fil (day D-1).                                                                                           |
 | vested_fil             | NUMERIC  | Total amount of FIL that is vested from genesis allocation.                                                                                     |
@@ -339,7 +339,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**                | **Type** | **Description**                                        |
 | :-------------------------- | :------- | :----------------------------------------------------- |
-| stat_date                   | DATE     | Data date, Data of day N will be triggered on day N+1. |
+| stat_date                   | DATE     | Refers to the date that data was recorded. |
 | total_initial_pledge        | NUMERIC  | Total initial pledge of network.                       |
 | total_locked_funds          | NUMERIC  | Total locked funds of network.                         |
 | total_locked_funds_increase | NUMERIC  | Daily change of total locked funds of network.         |
