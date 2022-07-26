@@ -13,13 +13,15 @@ See how SpaceScope’s API can be used in a dashboard over [here](https://dashbo
 Visit our [ObservableHQ website](https://observablehq.com/@starboard/starboard-filecoin-data-index) to find out more on how quickly you can create and deploy your own notebook using our API. Follow our guide and documentation to get started in using our API.
 
 ## Endpoint Overview
-The SpaceScope API is divided into several categories: **`Network Governance`**, **`Storage Providers`**, **`Actors`**, **`Token Flow`** etc. **`Network Governance`** is available now.
+The SpaceScope API is divided into several categories: **`Network Core`**, **`Value Flow`**, **`System Actor`**, **`User-Defined Actor`**, **`Raw Data`**. 
+
+**`Network Core`** is available now. There are 4 sections under the category of **`Network Core`**. 
 
 
 | **Endpoint Category**                    | **Description**                                                                                                                                                                                         |
 | :--------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| /network_governance/*                    | Endpoints that return data that provides a data overview on the Filecoin network.                                                                                                                       |
-| /network_governance/capacity-services/*  | Endpoints that return data of storage capacity and storage service on the Filecoin network storage capacity, services and onboarding on the Filecoin Network, under the category of Network Governance. |
-| /network_governance/market-deals/*       | Endpoints that return data on market demands, storage deals and daily deals on the Filecoin Network, under the category of Network Governance.                                                           |
-| /network_governance/transactions-usage/* | Endpoints that return data relating to network usage, transactions and network gas fees on the Filecoin Network, under the category of Network Governance.                                              |
-| /network_governance/circulating-supply/* | Endpoints that return data of circulating supply on the Filecoin Network, under the category of Network Governance.                                                                                     |
+| /network_core/*                    | Endpoints that return data that provides a data overview on the Filecoin network.                                                                                                                       |
+| /network_core/capacity-services/*  | Endpoints that return data of storage capacity and storage service on the Filecoin network storage capacity, services and onboarding on the Filecoin Network, under the category of Network Core. |
+| /network_core/market-deals/*       | Endpoints that return data on market demands, storage deals and daily deals on the Filecoin Network, under the category of Network Core.                                                           |
+| /network_core/transactions-usage/* | Endpoints that return data relating to network usage, transactions and network gas fees on the Filecoin Network, under the category of Network Core.                                              |
+| /network_core/circulating-supply/* | Endpoints that return data of circulating supply on the Filecoin Network, under the category of Network Core.                                                                                     |
