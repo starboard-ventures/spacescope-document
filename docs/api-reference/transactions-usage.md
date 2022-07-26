@@ -14,7 +14,7 @@ Overview of gas fee occurred on the Filecoin Network during the last 24 hours.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_fee_overview_d
+GET: /network_core/transactions-usage/gas_fee_overview_d
 ```
 
 #### REQUEST PARAMETERS
@@ -207,7 +207,7 @@ Overview of gas fee occurred on the Filecoin Network during the previous hour.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_fee_overview_h
+GET: /network_core/transactions-usage/gas_fee_overview_h
 ```
 
 #### REQUEST PARAMETERS
@@ -392,7 +392,7 @@ The network fees on the Filecoin Network in the past 24 hours.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/network_fee_breakdown
+GET: /network_core/transactions-usage/network_fee_breakdown
 ```
 
 #### REQUEST PARAMETERS
@@ -582,7 +582,7 @@ The gas usage on Filecoin Network based on sector states during the past 24 hour
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_usage_msg_d
+GET: /network_core/transactions-usage/gas_usage_msg_d
 ```
 
 #### REQUEST PARAMETERS
@@ -763,7 +763,7 @@ Distribution of deal counts for PreCommit Batch and ProveCommit Batch on Filecoi
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_distribution_d
+GET: /network_core/transactions-usage/gas_distribution_d
 ```
 
 #### REQUEST PARAMETERS
@@ -938,7 +938,7 @@ Top 10 storage providers on the Filecoin Network based on gas usage.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_top_storage_provider_d
+GET: /network_core/transactions-usage/gas_top_storage_provider_d
 ```
 
 #### REQUEST PARAMETERS
@@ -1103,7 +1103,7 @@ Gas fee for messages posted onto the Filecoin Network based on the method.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_detail_message_d
+GET: /network_core/transactions-usage/gas_detail_message_d
 ```
 
 #### REQUEST PARAMETERS
@@ -1298,7 +1298,7 @@ Average gas fee for messages posted onto the Filecoin Network based on the metho
 #### REQUEST URL
 
 ```js
-GET: /network_governance/transactions-usage/gas_usage_detail_message_d
+GET: /network_core/transactions-usage/gas_usage_detail_message_d
 ```
 
 #### REQUEST PARAMETERS
