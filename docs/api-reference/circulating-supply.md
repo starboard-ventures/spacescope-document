@@ -16,7 +16,7 @@ The total amount and the change of FIL tokens in circulation according to the Pr
 #### REQUEST URL
 
 ```js
-GET: /network_governance/circulating-supply/circulating_supply
+GET: /network_core/circulating-supply/circulating_supply
 ```
 
 #### REQUEST PARAMETERS
@@ -212,7 +212,7 @@ The status of the FIL token on the Filecoin Network in the past 24 hours.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/circulating-supply/network_locked_fil_breakdown
+GET: /network_core/circulating-supply/network_locked_fil_breakdown
 ```
 
 #### REQUEST PARAMETERS

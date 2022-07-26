@@ -14,7 +14,7 @@ Regular and verified deals based on their status that occurred in the last 24 ho
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/deal_states_aggregate_daily
+GET: /network_core/market-deals/deal_states_aggregate_daily
 ```
 
 #### REQUEST PARAMETERS
@@ -237,7 +237,7 @@ Daily deal summary statistics returns data based on regular and verified deals i
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/deal_summary_statistics_daily
+GET: /network_core/market-deals/deal_summary_statistics_daily
 ```
 
 #### REQUEST PARAMETERS
@@ -455,7 +455,7 @@ Top 10 active clients on Filecoin based on deal size.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_active_deal_bytes
+GET: /network_core/market-deals/top10_clients_by_active_deal_bytes
 ```
 
 #### REQUEST PARAMETERS
@@ -628,7 +628,7 @@ Top 10 active clients on Filecoin based on the deal count.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_active_deal_count
+GET: /network_core/market-deals/top10_clients_by_active_deal_count
 ```
 
 #### REQUEST PARAMETERS
@@ -801,7 +801,7 @@ Top 10 clients on Filecoin based on the newly committed sector deal size during 
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_new_deal_bytes
+GET: /network_core/market-deals/top10_clients_by_new_deal_bytes
 ```
 
 #### REQUEST PARAMETERS
@@ -974,7 +974,7 @@ Top 10 clients on Filecoin based on newly committed sector deal count during the
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_new_deal_count
+GET: /network_core/market-deals/top10_clients_by_new_deal_count
 ```
 
 #### REQUEST PARAMETERS
@@ -1147,7 +1147,7 @@ Top 10 active storage providers on Filecoin based on deal size.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_active_deal_bytes
+GET: /network_core/market-deals/top10_providers_by_active_deal_bytes
 ```
 
 #### REQUEST PARAMETERS
@@ -1321,7 +1321,7 @@ Top 10 active storage providers on Filecoin based on the deal count.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_active_deal_count
+GET: /network_core/market-deals/top10_providers_by_active_deal_count
 ```
 
 #### REQUEST PARAMETERS
@@ -1495,7 +1495,7 @@ Top 10 storage providers on Filecoin based on newly committed sector deal size d
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_new_deal_bytes
+GET: /network_core/market-deals/top10_providers_by_new_deal_bytes
 ```
 
 #### REQUEST PARAMETERS
@@ -1669,7 +1669,7 @@ Top 10 storage providers on Filecoin based on newly committed sector deal count 
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_new_deal_count
+GET: /network_core/market-deals/top10_providers_by_new_deal_count
 ```
 
 #### REQUEST PARAMETERS
@@ -1844,7 +1844,7 @@ Cumulative total number of clients on the Filecoin Network.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/market-deals/deal_client_headcount
+GET: /network_core/market-deals/deal_client_headcount
 ```
 
 #### REQUEST PARAMETERS

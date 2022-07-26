@@ -17,7 +17,7 @@ The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA)
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/network_storage_capacity
+GET: /network_core/capacity-services/network_storage_capacity
 ```
 
 #### REQUEST PARAMETERS
@@ -200,7 +200,7 @@ Storage sector state based on active, faulty, terminated or recovered sectors du
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/storage_state_d_v2
+GET: /network_core/capacity-services/storage_state_d_v2
 ```
 
 #### REQUEST PARAMETERS
@@ -406,7 +406,7 @@ Sectors onboarded onto the Filecoin Network based on PreCommit and ProveCommit s
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/sector_onboarding_by_method
+GET: /network_core/capacity-services/sector_onboarding_by_method
 ```
 
 #### REQUEST PARAMETERS
@@ -587,7 +587,7 @@ Sectors onboarded onto the Filecoin Network based on sector size during the last
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/prove_commit_split_d_v2
+GET: /network_core/capacity-services/prove_commit_split_d_v2
 ```
 
 #### REQUEST PARAMETERS
@@ -765,7 +765,7 @@ Sector size and pledges that are extended, expired, terminated or scheduled to e
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/sectors_schedule_expiration
+GET: /network_core/capacity-services/sectors_schedule_expiration
 ```
 
 #### REQUEST PARAMETERS
@@ -960,7 +960,7 @@ Weighted block rewards awarded by the Filecoin Network during the last 24 hours.
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/network_block_reward
+GET: /network_core/capacity-services/network_block_reward
 ```
 
 #### REQUEST PARAMETERS
@@ -1130,7 +1130,7 @@ Pledges and projected 360-day rewards awarded by the Filecoin Network for the se
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/economics_sector_pledges_returns_32g_d
+GET: /network_core/capacity-services/economics_sector_pledges_returns_32g_d
 ```
 
 #### REQUEST PARAMETERS
@@ -1323,7 +1323,7 @@ Pledges and projected 360-day rewards awarded by the Filecoin Network for the se
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/economics_sector_pledges_returns_64g_d
+GET: /network_core/capacity-services/economics_sector_pledges_returns_64g_d
 ```
 
 #### REQUEST PARAMETERS
@@ -1515,7 +1515,7 @@ Pledges that have been committed or expired in the last 24 hours on the Filecoin
 #### REQUEST URL
 
 ```js
-GET: /network_governance/capacity-services/commit_and_expire_pledge
+GET: /network_core/capacity-services/commit_and_expire_pledge
 ```
 
 #### REQUEST PARAMETERS
