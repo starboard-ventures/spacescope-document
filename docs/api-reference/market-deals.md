@@ -8,16 +8,16 @@ Market and deals provides information on the Filecoin Network deal statistics an
 
 ### Deal States Aggregate Daily
 
-#### DESCRIPTION
-Regular and verified deals based on their status that occurred in the last 24 hours on the Filecoin Network.
+#### Description
 
-#### REQUEST URL
+
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/deal_states_aggregate_daily
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -29,7 +29,7 @@ GET: /network_core/market-deals/deal_states_aggregate_daily
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -139,7 +139,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                              | **Type** | **Description**                                                            |
 | :---------------------------------------- | :------- | :------------------------------------------------------------------------- |
@@ -169,7 +169,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | active_deals_regular_provider_collateral  | NUMERIC  | Provider collateral in active regular deals.                                |
 | active_deals_verified_provider_collateral | NUMERIC  | Provider collateral in active verified deals.                              |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -231,16 +231,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 
 ### Daily Deal Summary Statistics 
 
-#### DESCRIPTION
-Daily deal summary statistics returns data based on regular and verified deals in the last 24 hours on the Filecoin Network. 
+#### Description
 
-#### REQUEST URL
+
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/deal_summary_statistics_daily
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -252,7 +252,7 @@ GET: /network_core/market-deals/deal_summary_statistics_daily
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -359,7 +359,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                            | **Type** | **Description**                                                                                    |
 | :-------------------------------------- | :------- | :------------------------------------------------------------------------------------------------- |
@@ -392,7 +392,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | median_verified_deal_price              | BIGINT   | Returns median value of verified deal storage price per TiB month in FIL.             |
 
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -449,16 +449,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 
 ### Top 10 Client by Active Deals Bytes
 
-#### DESCRIPTION
+#### Description
 Top 10 active clients on Filecoin based on deal size.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_clients_by_active_deal_bytes
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -470,7 +470,7 @@ GET: /network_core/market-deals/top10_clients_by_active_deal_bytes
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -577,7 +577,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
@@ -586,7 +586,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | client_rank       | INTEGER  | Client rank.                                           |
 | active_deal_bytes | NUMERIC  | Client active deal bytes in the past day.              |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -622,16 +622,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Client by Active Deals Count
 
-#### DESCRIPTION
+#### Description
 Top 10 active clients on Filecoin based on the deal count.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_clients_by_active_deal_count
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -643,7 +643,7 @@ GET: /network_core/market-deals/top10_clients_by_active_deal_count
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -750,7 +750,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
@@ -759,7 +759,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | client_rank       | INTEGER  | Client rank.                                           |
 | active_deal_count | BIGINT   | Client active deal count in the past day.              |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -795,16 +795,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Client by New Deals Bytes
 
-#### DESCRIPTION
+#### Description
 Top 10 clients on Filecoin based on the newly committed sector deal size during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_clients_by_new_deal_bytes
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -816,7 +816,7 @@ GET: /network_core/market-deals/top10_clients_by_new_deal_bytes
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -923,7 +923,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
@@ -932,7 +932,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | client_rank    | INTEGER  | Client rank.                                           |
 | new_deal_bytes | NUMERIC  | Client new deal bytes in the past week.                |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -968,16 +968,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Client by New Deals Count
 
-#### DESCRIPTION
+#### Description
 Top 10 clients on Filecoin based on newly committed sector deal count during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_clients_by_new_deal_count
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -989,7 +989,7 @@ GET: /network_core/market-deals/top10_clients_by_new_deal_count
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1096,7 +1096,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
@@ -1105,7 +1105,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | client_rank    | INTEGER  | Client rank.                                           |
 | new_deal_count | BIGINT   | Client new deal count in the past week.                |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1141,16 +1141,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Storage Provider by Active Deals Bytes
 
-#### DESCRIPTION
+#### Description
 Top 10 active storage providers on Filecoin based on deal size.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_providers_by_active_deal_bytes
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1162,7 +1162,7 @@ GET: /network_core/market-deals/top10_providers_by_active_deal_bytes
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1269,7 +1269,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
@@ -1278,7 +1278,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | provider_rank     | INTEGER  | Storage provider rank.                                 |
 | active_deal_bytes | NUMERIC  | Storage provider active deal bytes in the past day.    |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1315,16 +1315,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Storage Provider by Active Deals Count
 
-#### DESCRIPTION
+#### Description
 Top 10 active storage providers on Filecoin based on the deal count.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_providers_by_active_deal_count
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1336,7 +1336,7 @@ GET: /network_core/market-deals/top10_providers_by_active_deal_count
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1443,7 +1443,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
@@ -1452,7 +1452,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | provider_rank     | INTEGER  | Storage provider rank.                                 |
 | active_deal_count | BIGINT   | Storage provider active deal count in the past day.    |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1489,16 +1489,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Storage Provider by New Deals Bytes
 
-#### DESCRIPTION
+#### Description
 Top 10 storage providers on Filecoin based on newly committed sector deal size during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_providers_by_new_deal_bytes
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1510,7 +1510,7 @@ GET: /network_core/market-deals/top10_providers_by_new_deal_bytes
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1617,7 +1617,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
@@ -1626,7 +1626,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | provider_rank  | INTEGER  | Storage provider rank.                                 |
 | new_deal_bytes | NUMERIC  | Storage provider new deal bytes in the past week.      |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1663,16 +1663,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Top 10 Storage Provider by New Deals Count
 
-#### DESCRIPTION
+#### Description
 Top 10 storage providers on Filecoin based on newly committed sector deal count during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/top10_providers_by_new_deal_count
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1684,7 +1684,7 @@ GET: /network_core/market-deals/top10_providers_by_new_deal_count
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1791,7 +1791,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**            | **Type** | **Description**                                        |
 | :---------------------- | :------- | :----------------------------------------------------- |
@@ -1801,7 +1801,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 | verified_deals_count    | BIGINT   | New Verified Deals Count.                              |
 | verified_deals_bytes_tb | NUMERIC  | New Verified Deal Bytes.                               |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1838,16 +1838,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 ### Client Headcount
 
-#### DESCRIPTION
-Cumulative total number of clients on the Filecoin Network.
+#### Description
 
-#### REQUEST URL
+
+#### Request URL
 
 ```js
 GET: /network_core/market-deals/deal_client_headcount
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1859,7 +1859,7 @@ GET: /network_core/market-deals/deal_client_headcount
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1966,7 +1966,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                       | **Type** | **Description**                                                               |
 | :--------------------------------- | :------- | :---------------------------------------------------------------------------- |
@@ -1975,7 +1975,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | total_clients_verified             | BIGINT   | Cumulative total number of clients with verified deals. |
 | total_clients_verified_ratio       | NUMERIC  | total_clients_verified / total_clients                                        |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>

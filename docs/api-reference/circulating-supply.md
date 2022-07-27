@@ -8,18 +8,18 @@ Circulating supply provides information on the Filecoin Network existing FIL pro
 
 ### FIL Protocol Circulating Supply
 
-#### DESCRIPTION
+#### Description
 
 The total amount and the change of FIL tokens in circulation according to the Protocol’s definition.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/circulating-supply/circulating_supply
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -31,7 +31,7 @@ GET: /network_core/circulating-supply/circulating_supply
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -141,7 +141,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -159,7 +159,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 | burnt_fil             | NUMERIC  | Total FIL burned as part of penalties and on-chain computations.                                                                                     |
 | burnt_fil_increase             | NUMERIC  | burnt_fil (day D) - burnt_fil (day D-1).                                                                                     |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -204,18 +204,18 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 
 
 ### Daily Locked FIL Breakdown
-#### DESCRIPTION
+#### Description
 
 The status of the FIL token on the Filecoin Network in the past 24 hours.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_core/circulating-supply/network_locked_fil_breakdown
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -227,7 +227,7 @@ GET: /network_core/circulating-supply/network_locked_fil_breakdown
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -335,7 +335,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                | **Type** | **Description**                                        |
 | :-------------------------- | :------- | :----------------------------------------------------- |
@@ -347,7 +347,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 | new_reward_locked           | NUMERIC  | Total reward locked of network.                        |
 | new_reward_released         | NUMERIC  | new_reward_locked - locked_funds_increase.             |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
