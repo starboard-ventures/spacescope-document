@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Market & Deals
 
-Data of storage market and storage deals on the Filecoin Network.
+Market and deals provides information on the Filecoin Network deal statistics and client storage deals.
 
 ### Deal States Aggregate Daily
 
@@ -14,7 +14,7 @@ Data of storage market and storage deals on the Filecoin Network.
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/deal_states_aggregate_daily
+GET: /network_core/market-deals/deal_states_aggregate_daily
 ```
 
 #### Request Parameters
@@ -145,28 +145,28 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | :---------------------------------------- | :------- | :------------------------------------------------------------------------- |
 | stat_date                                 | DATE     | Refers to the date that data was recorded.                     |
 | active_deals_regular_bytes                | NUMERIC  | Active normal deal bytes.                                                  |
-| active_deals_regular_bytes_increase       | NUMERIC  | active_deals_regular_bytes(day D) - active_deals_regular_bytes(day D-1).   |
+| active_deals_regular_bytes_increase       | NUMERIC  | Daily change in active regular deal bytes; active_deals_regular_bytes(day D) - active_deals_regular_bytes(day D-1).|
 | active_deals_verified_bytes               | NUMERIC  | Active verified deal bytes.                                                |
-| active_deals_verified_bytes_increase      | NUMERIC  | active_deals_verified_bytes(day D) - active_deals_verified_bytes(day D-1). |
-| active_deals_regular_count                | BIGINT   | Active normal deal count.                                                  |
+| active_deals_verified_bytes_increase      | NUMERIC  | Daily change in active verified deal bytes; active_deals_verified_bytes(day D) - active_deals_verified_bytes(day D-1).|
+| active_deals_regular_count                | BIGINT   | Active regular deal count.                                                  |
 | active_deals_verified_count               | BIGINT   | Active verified deal count.                                                |
-| activated_deals_regular_bytes             | NUMERIC  | Activate normal deal bytes.                                                |
+| activated_deals_regular_bytes             | NUMERIC  | Activate regular deal bytes.                                                |
 | activated_deals_verified_bytes            | NUMERIC  | Activate verified deal bytes.                                              |
-| activated_deals_regular_count             | BIGINT   | Activate normal deal count.                                                |
+| activated_deals_regular_count             | BIGINT   | Activate regular deal count.                                                |
 | activated_deals_verified_count            | BIGINT   | Activate verified deal count.                                              |
-| new_deals_regular_bytes                   | NUMERIC  | New normal deal bytes.                                                     |
+| new_deals_regular_bytes                   | NUMERIC  | New regular deal bytes.                                                     |
 | new_deals_verified_bytes                  | NUMERIC  | New verified deal bytes.                                                   |
-| new_deals_regular_count                   | BIGINT   | New normal deal count.                                                     |
+| new_deals_regular_count                   | BIGINT   | New regular deal count.                                                     |
 | new_deals_verified_count                  | BIGINT   | New verified deal count.                                                   |
-| slashed_deals_regular_bytes               | NUMERIC  | Slashed normal deal bytes.                                                 |
+| slashed_deals_regular_bytes               | NUMERIC  | Slashed regular deal bytes.                                                 |
 | slashed_deals_verified_bytes              | NUMERIC  | Slashed verified deal bytes.                                               |
-| slashed_deals_regular_count               | BIGINT   | Slashed normal deal count.                                                 |
+| slashed_deals_regular_count               | BIGINT   | Slashed regular deal count.                                                 |
 | slashed_deals_verified_count              | BIGINT   | Slashed verified deal count.                                               |
-| expired_deals_regular_bytes               | NUMERIC  | Expired normal deal bytes.                                                 |
+| expired_deals_regular_bytes               | NUMERIC  | Expired regular deal bytes.                                                 |
 | expired_deals_verified_bytes              | NUMERIC  | Expired verified deal bytes.                                               |
-| expired_deals_regular_count               | BIGINT   | Expired normal deal count.                                                 |
+| expired_deals_regular_count               | BIGINT   | Expired regular deal count.                                                 |
 | expired_deals_verified_count              | BIGINT   | Expired verified deal count.                                               |
-| active_deals_regular_provider_collateral  | NUMERIC  | Provider collateral in active normal deals.                                |
+| active_deals_regular_provider_collateral  | NUMERIC  | Provider collateral in active regular deals.                                |
 | active_deals_verified_provider_collateral | NUMERIC  | Provider collateral in active verified deals.                              |
 
 #### Response Example
@@ -237,7 +237,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/deal_summary_statistics_daily
+GET: /network_core/market-deals/deal_summary_statistics_daily
 ```
 
 #### Request Parameters
@@ -364,30 +364,33 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | **Variable**                            | **Type** | **Description**                                                                                    |
 | :-------------------------------------- | :------- | :------------------------------------------------------------------------------------------------- |
 | stat_date                               | DATE     | Refers to the date that data was recorded.                                           |
-| new_deal_bytes_regular_last_week        | NUMERIC  | 七天内的new regular deal bytes (out of new deal)                                                   |
-| new_deal_bytes_verified_last_week       | NUMERIC  | 七天内的new verified deal bytes (out of new deal)                                                  |
-| max_regular_deal_price_last_week        | NUMERIC  | 七天内最贵的regular deal price in FIL (out of new deal)                                            |
-| max_verified_deal_price_last_week       | NUMERIC  | 七天内最贵的 verified deal price in FIL (out of new deal)                                          |
-| min_regular_deal_price_last_week        | NUMERIC  | 七天内最便宜的regular deal price  in FIL (out of new deal)                                         |
-| min_verified_deal_price_last_week       | NUMERIC  | 七天内最便宜的verified deal price in FIL (out of new deal)                                         |
-| total_regular_deal_count                | BIGINT   | 截至当日的 normal deal 的 deal_id 数量 (out of new deal)                                           |
-| total_verified_deal_count               | BIGINT   | 截至当日的 verified deal 的 deal_id 数量 (out of new deal)                                         |
-| total_regular_deal_bytes                | NUMERIC  | 截至当日的 regular deal size in bytes (out of new deal)                                            |
-| total_verified_deal_bytes               | NUMERIC  | 截至当日的 verified deal size in bytes (out of new deal)                                           |
-| avg_regular_deal_bytes                  | NUMERIC  | 截至当日的平均 regular deal size in bytes (out of new deal)                                        |
-| avg_verified_deal_bytes                 | NUMERIC  | 截至当日的平均 verified deal size in bytes (out of new deal)                                       |
-| total_regular_deal_duration             | NUMERIC  | 截至当日的 regular deal duration (out of new deal)                                                 |
-| total_verified_deal_duration            | NUMERIC  | 截至当日的 verified deal duration (out of new deal)                                                |
-| avg_regular_deal_duration_days          | NUMERIC  | 截至当日的平均 regular deal duration in days (out of new deal)                                     |
-| avg_verified_deal_duration_days         | NUMERIC  | 截至当日的平均 verified deal duration in days (out of new deal)                                    |
-| total_regular_deal_provider_collateral  | NUMERIC  | 截至当日的 regular deal provider collateral in FIL(out of new deal)                                |
-| total_verified_deal_provider_collateral | NUMERIC  | 截至当日的 verified deal provider collateral in FIL(out of new deal)                               |
-| avg_regular_deal_provider_collateral    | BIGINT   | 截至当日的平均 regular deal provider collateral in FIL(out of new deal)                            |
-| avg_verified_deal_provider_collateral   | BIGINT   | 截至当日的平均 verified deal provider collateral in FIL(out of new deal)                           |
-| percent_regular_deal_free               | NUMERIC  | 截至当日的免 storage_price_per_epoch 的 regular deal 占全部 regular deal 比值。(out of new deal)   |
-| percent_verified_deal_free              | NUMERIC  | 截至当日的免 storage_price_per_epoch 的 verified deal 占全部 verified deal 比值。(out of new deal) |
-| median_regular_deal_price               | BIGINT   | 截至当日的 regular deal storage price per tib month in FIL 中位数。(out of new deal)               |
-| median_verified_deal_price              | BIGINT   | 截至当日的 verified deal storage price per tib month in FIL 中位数。(out of new deal)              |
+| new_deal_bytes_regular_last_week        | NUMERIC  | New regular deal bytes in the last 7 days.                                                  |
+| new_deal_bytes_verified_last_week       | NUMERIC  | New verified deal bytes in the last 7 days.                                                  |
+| max_regular_deal_price_last_week        | NUMERIC  | Maximum deal price for regular deal in the last 7 days.                                           |
+| max_verified_deal_price_last_week       | NUMERIC  | Maximum deal price for verified deal in the last 7 days.                                         |
+| min_regular_deal_price_last_week        | NUMERIC  | Minimum deal price for regular deal in the last 7 days.                                        |
+| min_verified_deal_price_last_week       | NUMERIC  | Maximum deal price for verified deal in the last 7 days.                                       |
+| total_regular_deal_count                | BIGINT   | Cumulative total of regular deal count.                                         |
+| total_verified_deal_count               | BIGINT   | Cumulative total of verified deal count.                                         |
+| total_regular_deal_bytes                | NUMERIC  | Cumulative total of regular deal bytes.                                           |
+| total_verified_deal_bytes               | NUMERIC  | Cumulative total of verified deal bytes.                                           |
+| avg_regular_deal_bytes                  | NUMERIC  | Average of total regular deal bytes.                                      |
+| avg_verified_deal_bytes                 | NUMERIC  | Average of total verified deal bytes.                                       |
+| total_regular_deal_duration             | NUMERIC  | Total duration for regular deals.                                                 |
+| total_verified_deal_duration            | NUMERIC  | Total duration for verified deals.                                                |
+| avg_regular_deal_duration_days          | NUMERIC  | Average duration for regular deals in days.                                     |
+| avg_verified_deal_duration_days         | NUMERIC  | Average duration for verified deals in days.                                    |
+| total_regular_deal_provider_collateral  | NUMERIC  | Cumulative total of storage provider collateral for regular deal in FIL.                               |
+| total_verified_deal_provider_collateral | NUMERIC  | Cumulative total of storage provider collateral for verified deal in FIL.                             |
+| avg_regular_deal_provider_collateral    | BIGINT   | Average of storage provider collateral for regular deal in FIL.                           |
+| avg_verified_deal_provider_collateral   | BIGINT   | Average of storage provider collateral for verified deal in FIL.                           |
+| percent_regular_deal_free               | NUMERIC  | Returns percentage of free regular deals over total regular deals; Free regular deals are based on storage_price_per_epoch
+   |
+| percent_verified_deal_free              | NUMERIC  | Returns percentage of free verified deals over total verified deals; Free verified deals are based on storage_price_per_epoch
+ |
+| median_regular_deal_price               | BIGINT   | Returns median value of regular deal storage price per TiB month in FIL.               |
+| median_verified_deal_price              | BIGINT   | Returns median value of verified deal storage price per TiB month in FIL.             |
+
 
 #### Response Example
 
@@ -452,7 +455,7 @@ Top 10 active clients on Filecoin based on deal size.
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_active_deal_bytes
+GET: /network_core/market-deals/top10_clients_by_active_deal_bytes
 ```
 
 #### Request Parameters
@@ -625,7 +628,7 @@ Top 10 active clients on Filecoin based on the deal count.
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_active_deal_count
+GET: /network_core/market-deals/top10_clients_by_active_deal_count
 ```
 
 #### Request Parameters
@@ -798,7 +801,7 @@ Top 10 clients on Filecoin based on the newly committed sector deal size during 
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_new_deal_bytes
+GET: /network_core/market-deals/top10_clients_by_new_deal_bytes
 ```
 
 #### Request Parameters
@@ -971,7 +974,7 @@ Top 10 clients on Filecoin based on newly committed sector deal count during the
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_clients_by_new_deal_count
+GET: /network_core/market-deals/top10_clients_by_new_deal_count
 ```
 
 #### Request Parameters
@@ -1144,7 +1147,7 @@ Top 10 active storage providers on Filecoin based on deal size.
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_active_deal_bytes
+GET: /network_core/market-deals/top10_providers_by_active_deal_bytes
 ```
 
 #### Request Parameters
@@ -1318,7 +1321,7 @@ Top 10 active storage providers on Filecoin based on the deal count.
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_active_deal_count
+GET: /network_core/market-deals/top10_providers_by_active_deal_count
 ```
 
 #### Request Parameters
@@ -1492,7 +1495,7 @@ Top 10 storage providers on Filecoin based on newly committed sector deal size d
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_new_deal_bytes
+GET: /network_core/market-deals/top10_providers_by_new_deal_bytes
 ```
 
 #### Request Parameters
@@ -1666,7 +1669,7 @@ Top 10 storage providers on Filecoin based on newly committed sector deal count 
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/top10_providers_by_new_deal_count
+GET: /network_core/market-deals/top10_providers_by_new_deal_count
 ```
 
 #### Request Parameters
@@ -1841,7 +1844,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 #### Request URL
 
 ```js
-GET: /network_governance/market-deals/deal_client_headcount
+GET: /network_core/market-deals/deal_client_headcount
 ```
 
 #### Request Parameters
@@ -1968,8 +1971,8 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 | **Variable**                       | **Type** | **Description**                                                               |
 | :--------------------------------- | :------- | :---------------------------------------------------------------------------- |
 | stat_date                          | DATE     | Refers to the date that data was recorded.                        |
-| total_clients | BIGINT   | Total client number until the 1st height of data date.                        |
-| total_clients_verified             | BIGINT   | Total client number, which has fil+ deals, until the 1st height of data date. |
+| total_clients | BIGINT   | Cumulative total number of clients.                        |
+| total_clients_verified             | BIGINT   | Cumulative total number of clients with verified deals. |
 | total_clients_verified_ratio       | NUMERIC  | total_clients_verified / total_clients                                        |
 
 #### Response Example

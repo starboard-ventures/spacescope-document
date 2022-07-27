@@ -29,7 +29,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.title_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module,h1{
+.title_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module,
+h1 {
   --ifm-h1-font-size: 2rem !important;
 }
 
@@ -233,4 +234,12 @@ a,
 
 .card {
   color: var(--ifm-font-color-base);
+}
+
+.theme-doc-markdown h2:not(:first-child) {
+  margin-top: 90px;
+}
+
+.theme-doc-markdown h3:not(:first-child) {
+  margin-top: 80px;
 }

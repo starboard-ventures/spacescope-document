@@ -12,7 +12,7 @@ The application for API Token is not open now. Feel free to use the test token `
 
 ## Quick Start
 
-### QUICK START CODE EXAMPLE
+#### Quick Start Code Example
 
 
 <details open><summary>Code</summary>
@@ -122,8 +122,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </div>
 </details>
 
-### RETURN DATA EXAMPLE
+#### Return Data Example
 
+All endpoints return data in JSON format with the results of your query under `data` if the call is successful.
 
 <details open><summary>Response</summary>
 <div>
@@ -150,19 +151,19 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 ## Errors
 
-### HTTP STATUS CODES
+#### HTTP Status Codes
 
 The API uses standard HTTP status codes to indicate the success or failure of an API call.
-- **200 (OK)**: Standard response for successful HTTP requests. The actual response will depend on the request method used.
-- **400 (Bad Request)**: The server cannot or will not process the request due to an apparent client error.
-- **401 (Unauthorized)**: The user does not have valid authentication credentials for the target resource.
-- **500 (Internal Server Error)**: A generic error message is given when an unexpected condition is encountered, and no more specific message is suitable.
-- **502 (Bad Gateway)**:  The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+- `200 (OK)`: Standard response for successful HTTP requests. The actual response will depend on the request method used.
+- `400 (Bad Request)`: The server cannot or will not process the request due to an apparent client error.
+- `401 (Unauthorized)`: The user does not have valid authentication credentials for the target resource.
+- `500 (Internal Server Error)`: A generic error message is given when an unexpected condition is encountered, and no more specific message is suitable.
+- `502 (Bad Gateway)`:  The server was acting as a gateway or proxy and received an invalid response from the upstream server.
 
 
-### ERROR RESPONSE CODES
+#### Error Response Codes
 
-During error scenarios you may reference the **code** and **message** properties. One of the API error codes below will be returned if applicable.
+During error scenarios you may reference the `code` and `message` properties. One of the API error codes below will be returned if applicable.
 
 
 | **HTTP Status** | **Code** | **Message**                                                  |
@@ -176,6 +177,6 @@ During error scenarios you may reference the **code** and **message** properties
 
 
 ## Daily Update Time
-If not specified, the daily updates (for T-1 data) are normally finished at **09:00 PM UTC** every day. 
+If not specified, the daily updates (for T-1 data) are normally finished at `09:00 PM UTC` every day. 
 
-For example, the data for **July 1, 2022 UTC** should be ready at **09:00 PM, July 2, 2022, UTC.**
+For example, the data for `July 1, 2022 UTC` should be ready at `09:00 PM, July 2, 2022 UTC`.
