@@ -8,16 +8,16 @@ Data of network usage and gas fee on the Filecoin Network.
 
 ### Daily Gas Fee Overview
 
-#### DESCRIPTION
+#### Description
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_fee_overview_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -29,7 +29,7 @@ GET: /network_governance/transactions-usage/gas_fee_overview_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -139,7 +139,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                | **Type** | **Description**                                                                                            |
 | :-------------------------- | :------- | :--------------------------------------------------------------------------------------------------------- |
@@ -155,7 +155,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | avg_pre_agg_count           | NUMERIC  | Average PreCommitSectorBatch count of last day.                                                            |
 | avg_prove_agg_count         | NUMERIC  | Average ProveCommitAggregate count of last day.                                                            |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -201,16 +201,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Hourly Gas Fee Overview
 
-#### DESCRIPTION
+#### Description
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_fee_overview_h
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The most recent date that the API includes. |
@@ -222,7 +222,7 @@ GET: /network_governance/transactions-usage/gas_fee_overview_h
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -329,7 +329,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**            | **Type**    | **Description**                                                                                                                     |
 | :---------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
@@ -343,7 +343,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | avg_pre_agg_count       | NUMERIC     | The deal count of PreCommit aggregate on Filecoin in the past hour.                                                                 |
 | avg_prove_agg_count     | NUMERIC     | The deal count of ProveCommit aggregate on Filecoin in the past hour.                                                               |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -386,16 +386,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Daily Network Fee Breakdown
 
-#### DESCRIPTION
+#### Description
 The network fees on the Filecoin Network in the past 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/network_fee_breakdown
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -407,7 +407,7 @@ GET: /network_governance/transactions-usage/network_fee_breakdown
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -514,7 +514,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**           | **Type** | **Description**                                                                                                                                                   |
 | :--------------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -531,7 +531,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 | protocol_revenue       | NUMERIC  | Protocol revenue = base_fee_burn + pre_commit_batch_fee + prove_commit_batch_fee + penalty_fee + overestimation_fee + miner_tip = total_fee_increase + miner_tip. |
 | total_protocol_revenue | NUMERIC  | Accumulated protocol revenue from 20201015 until day N.                                                                                                           |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -576,16 +576,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 ### Daily Gas Usage by Methods
 
-#### DESCRIPTION
+#### Description
 The gas usage on Filecoin Network based on sector states in the past 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_usage_msg_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -597,7 +597,7 @@ GET: /network_governance/transactions-usage/gas_usage_msg_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -704,7 +704,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**           | **Type** | **Description**                                                                      |
 | :--------------------- | :------- | :----------------------------------------------------------------------------------- |
@@ -717,7 +717,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | publish_storage_deals  | NUMERIC  | Total gas used of (actor_family ='storagemarket' and method = 4).                    |
 | submit_windowed_post   | NUMERIC  | Total gas used of (actor_family ='storageminer' and method = 5).                     |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -757,16 +757,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Distribution of Past 24 Hours preCommit Batch & proveCommit Batch
 
-#### DESCRIPTION
+#### Description
 Distribution of deal counts for PreCommit Batch and ProveCommit Batch on Filecoin Network in the past 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_distribution_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -778,7 +778,7 @@ GET: /network_governance/transactions-usage/gas_distribution_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -886,7 +886,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                     | **Type** | **Description**                                                                   |
 | :------------------------------- | :------- | :-------------------------------------------------------------------------------- |
@@ -895,7 +895,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | distribution_key                 | VARCHAR  | Buckets in size of 10.                                                            |
 | distribution_value               | NUMERIC  | Number of PreCommitSectorBatch count or ProveCommitAggregate count in the bucket. |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -932,16 +932,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Top 10 Storage Provider by Gas Usage
 
-#### DESCRIPTION
+#### Description
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_top_storage_provider_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -953,7 +953,7 @@ GET: /network_governance/transactions-usage/gas_top_storage_provider_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1060,7 +1060,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
@@ -1079,7 +1079,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | miner_tip                | NUMERIC  | Total amount of FIL the miner receives for executing the message.                                               |
 | miner_tip_pct            | NUMERIC  | Ratio of miner_tip of this method to all methods.                                                               |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1107,16 +1107,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Daily Gas Detail Message
 
-#### DESCRIPTION
+#### Description
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_detail_message_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1128,7 +1128,7 @@ GET: /network_governance/transactions-usage/gas_detail_message_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1235,7 +1235,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
@@ -1254,7 +1254,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | miner_tip                | NUMERIC  | Total amount of FIL the miner receives for executing the message.                                               |
 | miner_tip_pct            | NUMERIC  | Ratio of miner_tip of this method to all methods.                                                               |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1302,16 +1302,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 ### Daily Gas Detail Message (Average)
 
-#### DESCRIPTION
+#### Description
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/transactions-usage/gas_usage_detail_message_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1323,7 +1323,7 @@ GET: /network_governance/transactions-usage/gas_usage_detail_message_d
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1430,7 +1430,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**         | **Type** | **Description**                                                                                                 |
 | :------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
@@ -1445,7 +1445,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 | over_estimation_burn | NUMERIC  | Average fee to pay for overestimating the gas used to execute a message of this method.                         |
 | miner_tip            | NUMERIC  | Average amount of FIL the miner receives for executing the message.                                             |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>

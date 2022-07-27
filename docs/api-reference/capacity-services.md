@@ -9,18 +9,18 @@ Data of storage capacity and storage service on the Filecoin Network.
 ### Network Storage Capacity 
 
 
-#### DESCRIPTION
+#### Description
 
 The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/network_storage_capacity
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -32,7 +32,7 @@ GET: /network_governance/capacity-services/network_storage_capacity
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -142,7 +142,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -153,7 +153,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 | total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
 | new_baseline_power             | NUMERIC  | The baseline power (in bytes) the network is targeting.                                                                                            |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -192,18 +192,18 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 ### Storage State 
 
 
-#### DESCRIPTION
+#### Description
 
 Storage sector state based on active, faulty, terminated or recovered sectors during the last 24 hours.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/storage_state_d_v2
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -215,7 +215,7 @@ GET: /network_governance/capacity-services/storage_state_d_v2
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -322,7 +322,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**             | **Type** | **Description**                                                                                           |
 | ------------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
@@ -344,7 +344,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | extend_size_qap          | NUMERIC  | Quality Adjusted Power of Sectors that are scheduled to expire but get extended during the last 24 hours. |
 | extend_size_qap_increase | NUMERIC  | Daily change in sector QAP extension.                                                                     |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -398,18 +398,18 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 ### Capacity Onboarding by Method 
 
 
-#### DESCRIPTION
+#### Description
 
 Sectors onboarded onto the Filecoin Network based on PreCommit and ProveCommit states during the last 24 hours.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/sector_onboarding_by_method
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -421,7 +421,7 @@ GET: /network_governance/capacity-services/sector_onboarding_by_method
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -528,7 +528,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**                 | **Type** | **Description**                                                                                      |
 | ---------------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
@@ -540,7 +540,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | prove_commit_aggregate_size  | NUMERIC  | Daily ProveCommitAggregate size in PiB.                                                              |
 | prove_commit_total_size      | NUMERIC  | Refers to the sum of all ProveCommit methods; prove_commit_sector_size + prove_commit_aggregate_size |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -579,18 +579,18 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 ### Capacity Onboarding by Sector Size 
 
 
-#### DESCRIPTION
+#### Description
 
 Sectors onboarded onto the Filecoin Network based on sector size during the last 24 hour.
 
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/prove_commit_split_d_v2
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -602,7 +602,7 @@ GET: /network_governance/capacity-services/prove_commit_split_d_v2
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -709,7 +709,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**       | **Type** | **Description**                                            |
 | ------------------ | -------- | ---------------------------------------------------------- |
@@ -719,7 +719,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 | sizebyte           | NUMERIC  | ProveCommit sector(64GiB) size in bytes.                   |
 | size_byte_qap      | NUMERIC  | ProveCommit sector(64GiB) quality adjusted power in bytes. |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -758,23 +758,23 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 ### Sectors Scheduled Expiration
 
 
-#### DESCRIPTION
+#### Description
 
 Sector size and pledges that are extended, expired, terminated or scheduled to expire based on their proposed date.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/sectors_schedule_expiration
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**               | **Example** | **Default**                                 |
 | ------------ | -------- | ----------------------------- | ----------- | ------------------------------------------- |
 | state_date   | DATE     | The selected Date (Optional). | 2022-07-01  | The most recent date that the API includes. |
 
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -881,7 +881,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**               | **Type** | **Description**                                                                          |
 | -------------------------- | -------- | ---------------------------------------------------------------------------------------- |
@@ -902,7 +902,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | expired_pledge             | NUMERIC  | The total initial pledge of sectors that have expired.                                   |
 | potential_expire_pledge    | NUMERIC  | Refers to scheduled_expire – terminated – extended – expired, in initial pledge.         |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -953,17 +953,17 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 ### Network Block Reward
 
 
-#### DESCRIPTION
+#### Description
 
 Weighted block rewards awarded by the Filecoin Network during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/network_block_reward
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -975,7 +975,7 @@ GET: /network_governance/capacity-services/network_block_reward
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1082,14 +1082,14 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**        | **Type** | **Description**                                                                  |
 | ------------------- | -------- | -------------------------------------------------------------------------------- |
 | stat_date           | DATE     | Refers to the date that data was recorded.                                       |
 | reward_per_wincount | NUMERIC  | Weighted block rewards awarded by the Filecoin Network during the last 24 hours. |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1123,17 +1123,17 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 ### 32GiB Sector Pledges and Returns
 
 
-#### DESCRIPTION
+#### Description
 
 Pledges and projected 360-day rewards awarded by the Filecoin Network for the sector size of 32GiB during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/economics_sector_pledges_returns_32g_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1145,7 +1145,7 @@ GET: /network_governance/capacity-services/economics_sector_pledges_returns_32g_
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1252,7 +1252,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
@@ -1270,7 +1270,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 | post_gas_return      | NUMERIC  | Refers to profit / initial_pledge                                                                    |
 | post_gas_return_agg  | NUMERIC  | Refers to profit_agg / initial_pledge                                                                |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1316,17 +1316,17 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 ### 64GiB Sector Pledges and Returns
 
 
-#### DESCRIPTION
+#### Description
 
 Pledges and projected 360-day rewards awarded by the Filecoin Network for the sector size of 64GiB during the last 24 hours.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/economics_sector_pledges_returns_64g_d
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1338,7 +1338,7 @@ GET: /network_governance/capacity-services/economics_sector_pledges_returns_64g_
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1444,7 +1444,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
@@ -1462,7 +1462,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 | post_gas_return      | NUMERIC  | Refers to profit / initial_pledge                                                                    |
 | post_gas_return_agg  | NUMERIC  | Refers to profit_agg / initial_pledge                                                                |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
@@ -1508,17 +1508,17 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 ### Committed and Expired Pledge
 
 
-#### DESCRIPTION
+#### Description
 
 Pledges that have been committed or expired in the last 24 hours on the Filecoin Network.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/commit_and_expire_pledge
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -1530,7 +1530,7 @@ GET: /network_governance/capacity-services/commit_and_expire_pledge
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -1636,7 +1636,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**            | **Type** | **Description**                                      |
 | ----------------------- | -------- | ---------------------------------------------------- |
@@ -1651,7 +1651,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 | expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of day.   |
 | expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of day.         |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>

@@ -134,6 +134,7 @@
 
 .navbar__title.text--truncate {
   display: flex;
+  align-items: center;
 }
 
 .navbar__title.text--truncate::before {
@@ -143,7 +144,7 @@
   height: 32px;
   width: 35px;
   background-size: cover;
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 [data-theme="dark"] .navbar__title.text--truncate::before {

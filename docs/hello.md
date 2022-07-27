@@ -6,17 +6,17 @@ sidebar_position: 3
 ### Committed and Expired Pledge
 
 
-#### DESCRIPTION
+#### Description
 
 Pledges that have been committed or expired in the last 24 hours on the Filecoin Network.
 
-#### REQUEST URL
+#### Request URL
 
 ```js
 GET: /network_governance/capacity-services/commit_and_expire_pledge
 ```
 
-#### REQUEST PARAMETERS
+#### Request Parameters
 | **Variable** | **Type** | **Description**                               | **Example** | **Default**                                 |
 | ------------ | -------- | --------------------------------------------- | ----------- | ------------------------------------------- |
 | start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
@@ -28,7 +28,7 @@ GET: /network_governance/capacity-services/commit_and_expire_pledge
 
 :::
 
-#### REQUEST EXAMPLE
+#### Request Examples
 
 <details><summary>Code</summary>
 <div>
@@ -138,7 +138,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 </details>
 
 
-#### RESPONSE SCHEMA
+#### Response Schema
 
 | **Variable**            | **Type** | **Description**                                      |
 | ----------------------- | -------- | ---------------------------------------------------- |
@@ -153,7 +153,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 | expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of day.   |
 | expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of day.         |
 
-#### RESPONSE EXAMPLES
+#### Response Example
 
 <details><summary>Response</summary>
 <div>
