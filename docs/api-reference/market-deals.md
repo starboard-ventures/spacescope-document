@@ -143,7 +143,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 
 | **Variable**                              | **Type** | **Description**                                                            |
 | :---------------------------------------- | :------- | :------------------------------------------------------------------------- |
-| stat_date                                 | DATE     | Refers to the date that data was recorded.                     |
+| stat_date                                 | DATE     | Refers to the date the data was recorded.                     |
 | active_deals_regular_bytes                | NUMERIC  | Active normal deal bytes.                                                  |
 | active_deals_regular_bytes_increase       | NUMERIC  | Daily change in active regular deal bytes; active_deals_regular_bytes(day D) - active_deals_regular_bytes(day D-1).|
 | active_deals_verified_bytes               | NUMERIC  | Active verified deal bytes.                                                |
@@ -363,7 +363,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 
 | **Variable**                            | **Type** | **Description**                                                                                    |
 | :-------------------------------------- | :------- | :------------------------------------------------------------------------------------------------- |
-| stat_date                               | DATE     | Refers to the date that data was recorded.                                           |
+| stat_date                               | DATE     | Refers to the date the data was recorded.                                           |
 | new_deal_bytes_regular_last_week        | NUMERIC  | New regular deal bytes in the last 7 days.                                                  |
 | new_deal_bytes_verified_last_week       | NUMERIC  | New verified deal bytes in the last 7 days.                                                  |
 | max_regular_deal_price_last_week        | NUMERIC  | Maximum deal price for regular deal in the last 7 days.                                           |
@@ -581,7 +581,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
-| stat_date         | DATE     | Refers to the date that data was recorded. |
+| stat_date         | DATE     | Refers to the date the data was recorded. |
 | client_id         | TEXT     | Client ID.                   |
 | client_rank       | INTEGER  | Client rank.                                           |
 | active_deal_bytes | NUMERIC  | Client active deal bytes in the past day.              |
@@ -754,7 +754,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
-| stat_date         | DATE     | Refers to the date that data was recorded. |
+| stat_date         | DATE     | Refers to the date the data was recorded. |
 | client_id         | TEXT     | Client ID.                       |
 | client_rank       | INTEGER  | Client rank.                                           |
 | active_deal_count | BIGINT   | Client active deal count in the past day.              |
@@ -927,7 +927,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
-| stat_date      | DATE     | Refers to the date that data was recorded. |
+| stat_date      | DATE     | Refers to the date the data was recorded. |
 | client_id      | TEXT     | Client ID.                      |
 | client_rank    | INTEGER  | Client rank.                                           |
 | new_deal_bytes | NUMERIC  | Client new deal bytes in the past week.                |
@@ -1100,7 +1100,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
-| stat_date      | DATE     | Refers to the date that data was recorded. |
+| stat_date      | DATE     | Refers to the date the data was recorded. |
 | client_id      | TEXT     | Client ID.                      |
 | client_rank    | INTEGER  | Client rank.                                           |
 | new_deal_count | BIGINT   | Client new deal count in the past week.                |
@@ -1273,7 +1273,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
-| stat_date         | DATE     | Refers to the date that data was recorded. |
+| stat_date         | DATE     | Refers to the date the data was recorded. |
 | provider_id       | TEXT     | Storage provider ID.           |
 | provider_rank     | INTEGER  | Storage provider rank.                                 |
 | active_deal_bytes | NUMERIC  | Storage provider active deal bytes in the past day.    |
@@ -1447,7 +1447,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**      | **Type** | **Description**                                        |
 | :---------------- | :------- | :----------------------------------------------------- |
-| stat_date         | DATE     | Refers to the date that data was recorded. |
+| stat_date         | DATE     | Refers to the date the data was recorded. |
 | provider_id       | TEXT     | Storage provider ID.           |
 | provider_rank     | INTEGER  | Storage provider rank.                                 |
 | active_deal_count | BIGINT   | Storage provider active deal count in the past day.    |
@@ -1621,7 +1621,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**   | **Type** | **Description**                                        |
 | :------------- | :------- | :----------------------------------------------------- |
-| stat_date      | DATE     | Refers to the date that data was recorded. |
+| stat_date      | DATE     | Refers to the date the data was recorded. |
 | provider_id    | TEXT     | Storage provider ID.            |
 | provider_rank  | INTEGER  | Storage provider rank.                                 |
 | new_deal_bytes | NUMERIC  | Storage provider new deal bytes in the past week.      |
@@ -1795,7 +1795,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/t
 
 | **Variable**            | **Type** | **Description**                                        |
 | :---------------------- | :------- | :----------------------------------------------------- |
-| stat_date               | DATE     | Refers to the date that data was recorded. |
+| stat_date               | DATE     | Refers to the date the data was recorded. |
 | regular_deals_count     | BIGINT   | New Regular Deals Count.                               |
 | regular_deals_bytes_tb  | NUMERIC  | New Regular Deal Bytes.                                |
 | verified_deals_count    | BIGINT   | New Verified Deals Count.                              |
@@ -1970,7 +1970,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/d
 
 | **Variable**                       | **Type** | **Description**                                                               |
 | :--------------------------------- | :------- | :---------------------------------------------------------------------------- |
-| stat_date                          | DATE     | Refers to the date that data was recorded.                        |
+| stat_date                          | DATE     | Refers to the date the data was recorded.                        |
 | total_clients | BIGINT   | Cumulative total number of clients.                        |
 | total_clients_verified             | BIGINT   | Cumulative total number of clients with verified deals. |
 | total_clients_verified_ratio       | NUMERIC  | total_clients_verified / total_clients                                        |
