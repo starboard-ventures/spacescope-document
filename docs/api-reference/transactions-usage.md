@@ -213,8 +213,8 @@ GET: /network_core/transactions-usage/gas_fee_overview_h
 #### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The most recent date that the API includes. |
-| end_date     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The most recent date that the API includes. |
+| start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
+| end_date     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
 
 :::note
 
