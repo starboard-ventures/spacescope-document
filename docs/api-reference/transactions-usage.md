@@ -143,7 +143,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**                | **Type** | **Description**                                                                                            |
 | :-------------------------- | :------- | :--------------------------------------------------------------------------------------------------------- |
-| stat_date                   | DATE     | Refers to the date that data was recorded.                                                     |
+| stat_date                   | DATE     | Refers to the date the data was recorded.                                                     |
 | gas_sector_sealing          | NUMERIC  | The average gas cost of sealing a sector in the past 24 hours.                                             |
 | gas_storage_deal_publishing | NUMERIC  | The average gas cost of publishing a storage deal in the past 24 hours.                                    |
 | overestimation              | NUMERIC  | The average gas overestimation cost in the past 24 hours.                                                                                    |
@@ -333,7 +333,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**            | **Type**    | **Description**                                                                                                                     |
 | :---------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date | DATE        | Refers to the date that data was recorded.                                                                              |
+| stat_date | DATE        | Refers to the date the data was recorded.                                                                              |
 | hour_date               | TIMESTAMPTZ | Trunc hour of height.                                                                                                               |
 | precommit_cost_sector   | NUMERIC     | Average PreCommit Cost.                                                                                                             |
 | provecommit_cost_sector | NUMERIC     | Average ProveCommit Cost.                                                                                                           |
@@ -518,7 +518,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**           | **Type** | **Description**                                                                                                                                                   |
 | :--------------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date              | DATE     | Refers to the date that data was recorded.                                                                                                            |
+| stat_date              | DATE     | Refers to the date the data was recorded.                                                                                                            |
 | base_fee_burn          | NUMERIC  | Base fee burn.                                                                                                                                                    |
 | overestimation_fee     | NUMERIC  | Overestimation fee.                                                                                                                                               |
 | pre_commit_batch_fee   | NUMERIC  | PreCommit Batch Fee.                                                                                                                                              |
@@ -708,7 +708,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**           | **Type** | **Description**                                                                      |
 | :--------------------- | :------- | :----------------------------------------------------------------------------------- |
-| stat_date              | DATE     | Refers to the date that data was recorded.                               |
+| stat_date              | DATE     | Refers to the date the data was recorded.                               |
 | total_gas_used         | NUMERIC  | Total amount of resources (or units of gas) consumed, in order to execute a message. |
 | prove_commit_sector    | NUMERIC  | Total gas used of (actor_family ='storageminer' and method = 7).                     |
 | pre_commit_sector      | NUMERIC  | Total gas used of (actor_family ='storageminer' and method = 6).                     |
@@ -890,7 +890,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**                     | **Type** | **Description**                                                                   |
 | :------------------------------- | :------- | :-------------------------------------------------------------------------------- |
-| stat_date                        | DATE     | Refers to the date that data was recorded.                            |
+| stat_date                        | DATE     | Refers to the date the data was recorded.                            |
 | metric_type | VARCHAR  | precommit_batch_distribution or provecommit_batch_distribution .                  |
 | distribution_key                 | VARCHAR  | Buckets in size of 10.                                                            |
 | distribution_value               | NUMERIC  | Number of PreCommitSectorBatch count or ProveCommitAggregate count in the bucket. |
@@ -1064,7 +1064,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                          |
 | miner_id             | TEXT     |    Id of miners.                  |
 | gas_used                   | NUMERIC   | base_fee_burn + over_estimation_burn + miner_tip. |
 
@@ -1229,7 +1229,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                          |
 | actor_family             | TEXT     | The short unversioned name of the actor that received the message.'All methods' is for all.                     |
 | method                   | BIGINT   | The successful method number to invoke. Only unique to the actor the method is being invoked on. (0 is for all) |
 | method_name              | TEXT     | The human readable name of method.                                                                              |
@@ -1424,7 +1424,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**         | **Type** | **Description**                                                                                                 |
 | :------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                          |
 | actor_family         | TEXT     | The short unversioned name of the actor that received the message.'All methods' is for all.                     |
 | method               | BIGINT   | The successful method number to invoke. Only unique to the actor the method is being invoked on. (0 is for all) |
 | method_name          | TEXT     | The human readable name of method.                                                                              |
