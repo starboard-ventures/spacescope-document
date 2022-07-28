@@ -13,7 +13,6 @@ Capacity and services provides information on the Filecoin Network’s data stor
 
 The Filecoin Network storage capacity, presented in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
-
 #### Request URL
 
 ```js
@@ -146,9 +145,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date                      | DATE     | Refers to the date that data was recorded.                                                                                                         |
+| stat_date                      | DATE     | Refers to the date the data was recorded.                                                                                                         |
 | total_qa_bytes_power           | NUMERIC  | This parameter measures the consensus power of stored data on the network, and is equal to Raw Byte Power multiplied by Sector Quality Multiplier. |
-| total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality Adjusted Power                                                                                               |
+| total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality-Adjusted Power                                                                                               |
 | total_raw_bytes_power          | NUMERIC  | This measurement is the total size of all sectors in bytes.                                                                                        |
 | total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
 | new_baseline_power             | NUMERIC  | The baseline power (in bytes) targeted by the network.                                                                                           |
@@ -326,7 +325,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**             | **Type** | **Description**                                                                                           |
 | ------------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                                |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                                |
 | active_fault             | NUMERIC  | The total storage size of outstanding faulted sectors that are not recovered or terminated.               |
 | active_fault_increase    | NUMERIC  | Daily change in active fault size.                                                        |
 | active_fault_avg_d       | NUMERIC  | Average days that a sector fault remains active on the Filecoin Network during the last 24 hours.         |
@@ -341,7 +340,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | passive_term_d           | NUMERIC  | Sectors that are scheduled to expire, but have been terminated passively after 42 days.                   |
 | extend_size              | NUMERIC  | Sectors that are scheduled to expire but get extended during the last 24 hours.                           |
 | extend_size_increase     | NUMERIC  | Daily change in sector extension.                                                                         |
-| extend_size_qap          | NUMERIC  | Quality Adjusted Power of Sectors that are scheduled to expire but got extended during the last 24 hours. |
+| extend_size_qap          | NUMERIC  | Quality-Adjusted Power of Sectors that are scheduled to expire but got extended during the last 24 hours. |
 | extend_size_qap_increase | NUMERIC  | Daily change in sector QAP extension.                                                                     |
 
 #### Response Example
@@ -532,7 +531,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**                 | **Type** | **Description**                                                                                      |
 | ---------------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date                    | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date                    | DATE     | Refers to the date the data was recorded.                                                           |
 | pre_commit_sector_size       | NUMERIC  | Daily PreCommitSector size in PiB.                                                                   |
 | pre_commit_sector_batch_size | NUMERIC  | Daily PreCommitSectorBatch size in PiB.                                                              |
 | pre_commit_total_size        | NUMERIC  | Refers to the sum of all PreCommit methods; pre_commit_sector_size + pre_commit_sector_batch_size    |
@@ -713,7 +712,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 
 | **Variable**       | **Type** | **Description**                                            |
 | ------------------ | -------- | ---------------------------------------------------------- |
-| stat_date          | DATE     | Refers to the date that data was recorded.                 |
+| stat_date          | DATE     | Refers to the date the data was recorded.                 |
 | halfsizebyte       | NUMERIC  | ProveCommit sector(32GiB) size in bytes.                   |
 | half_size_byte_qap | NUMERIC  | ProveCommit sector(32GiB) quality-adjusted power in bytes. |
 | sizebyte           | NUMERIC  | ProveCommit sector(64GiB) size in bytes.                   |
@@ -885,14 +884,14 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**               | **Type** | **Description**                                                                          |
 | -------------------------- | -------- | ---------------------------------------------------------------------------------------- |
-| stat_date                  | DATE     | Refers to the date that data was recorded.                                               |
+| stat_date                  | DATE     | Refers to the date the data was recorded.                                               |
 | interest_date              | DATE     | The date of interest.                                                                    |
 | schedule_expire_bytes      | BIGINT   | The total bytes of sectors scheduled to expire on the date of interest.                  |
-| schedule_expire_bytes_qap  | DOUBLE   | The total quality adjusted power of sectors scheduled to expire on the date of interest. |
+| schedule_expire_bytes_qap  | DOUBLE   | The total quality-adjusted power of sectors scheduled to expire on the date of interest. |
 | extended_bytes             | BIGINT   | The total bytes of sectors that have been extended.                                      |
-| extended_bytes_qap         | DOUBLE   | The total quality adjusted power of sectors that have been extended.                     |
+| extended_bytes_qap         | DOUBLE   | The total quality-adjusted power of sectors that have been extended.                     |
 | terminated_bytes           | BIGINT   | The total bytes of sectors that have been terminated.                                    |
-| terminated_bytes_qap       | DOUBLE   | The total quality adjusted power of sectors that have been terminated.                   |
+| terminated_bytes_qap       | DOUBLE   | The total quality-adjusted power of sectors that have been terminated.                   |
 | expired_bytes              | BIGINT   | The total bytes of sectors that have expired.                                            |
 | potential_expire_bytes     | BIGINT   | Refers to scheduled_expire – terminated – extended – expired, in bytes.                  |
 | potential_expire_bytes_qap | DOUBLE   | Refers to scheduled_expire_qap – terminated_qap – extended_qap – expired_qap , in QAP.   |
@@ -1086,7 +1085,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**        | **Type** | **Description**                                                                  |
 | ------------------- | -------- | -------------------------------------------------------------------------------- |
-| stat_date           | DATE     | Refers to the date that data was recorded.                                       |
+| stat_date           | DATE     | Refers to the date the data was recorded.                                       |
 | reward_per_wincount | NUMERIC  | Weighted block rewards awarded by the Filecoin Network during the last 24 hours. |
 
 #### Response Example
@@ -1256,7 +1255,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                           |
 | rewards              | NUMERIC  | Rewards awarded over 360 days                                                                        |
 | precommit_fil        | NUMERIC  | PreCommitSector gas fees                                                                             |
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
@@ -1448,7 +1447,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                           |
 | rewards              | NUMERIC  | Rewards awarded over 360 days                                                                        |
 | precommit_fil        | NUMERIC  | PreCommitSector gas fees                                                                             |
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
@@ -1640,7 +1639,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 
 | **Variable**            | **Type** | **Description**                                      |
 | ----------------------- | -------- | ---------------------------------------------------- |
-| stat_date               | DATE     | Refers to the date that data was recorded.           |
+| stat_date               | DATE     | Refers to the date the data was recorded.           |
 | raw_bytes_gb            | NUMERIC  | Total sector size of miners.(Bytes / 32 GiB)         |
 | commit_pct_qa_adj       | NUMERIC  | Total committed pct verified QAP of miners.          |
 | commit_pledge           | NUMERIC  | Total committed initial pledge of the day.               |
