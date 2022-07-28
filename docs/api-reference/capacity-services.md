@@ -4,14 +4,14 @@ sidebar_position: 3
 
 # Capacity & Services
 
-Capacity and services provides information on the Filecoin Network data storage capacity, services and onboarding process. 
+Capacity and services provides information on the Filecoin Network’s data storage capacity, storage services and onboarding processes. 
 
 ### Network Storage Capacity 
 
 
 #### Description
 
-The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
+The Filecoin Network storage capacity, presented in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
 
 #### Request URL
@@ -151,7 +151,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 | total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality Adjusted Power                                                                                               |
 | total_raw_bytes_power          | NUMERIC  | This measurement is the total size of all sectors in bytes.                                                                                        |
 | total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
-| new_baseline_power             | NUMERIC  | The baseline power (in bytes) the network is targeting.                                                                                            |
+| new_baseline_power             | NUMERIC  | The baseline power (in bytes) targeted by the network.                                                                                           |
 
 #### Response Example
 
@@ -335,13 +335,13 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | term_d                   | NUMERIC  | Daily terminated sector size in TiB.                                                                      |
 | term_d_increase          | NUMERIC  | Daily change in terminated sector size.                                                                   |
 | net_fault_d              | NUMERIC  | The net fault refers to fault_d - recover_d - term_d                                                      |
-| active_term_d            | NUMERIC  | Sectors that are scheduled to expire but get terminated actively by SPs.                                  |
+| active_term_d            | NUMERIC  | Sectors that are scheduled to expire, but has been terminated actively by SPs.                            |
 | active_term_m            | NUMERIC  | The total storage size of new active terminated sectors in the past 30 days.                              |
 | active_term_m_increase   | NUMERIC  | Daily change in active terminated sectors in the past 30 days.                           |
-| passive_term_d           | NUMERIC  | Sectors that are scheduled to expire but get terminated passively after 42 days.                          |
+| passive_term_d           | NUMERIC  | Sectors that are scheduled to expire, but have been terminated passively after 42 days.                   |
 | extend_size              | NUMERIC  | Sectors that are scheduled to expire but get extended during the last 24 hours.                           |
 | extend_size_increase     | NUMERIC  | Daily change in sector extension.                                                                         |
-| extend_size_qap          | NUMERIC  | Quality Adjusted Power of Sectors that are scheduled to expire but get extended during the last 24 hours. |
+| extend_size_qap          | NUMERIC  | Quality Adjusted Power of Sectors that are scheduled to expire but got extended during the last 24 hours. |
 | extend_size_qap_increase | NUMERIC  | Daily change in sector QAP extension.                                                                     |
 
 #### Response Example
@@ -715,9 +715,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 | ------------------ | -------- | ---------------------------------------------------------- |
 | stat_date          | DATE     | Refers to the date that data was recorded.                 |
 | halfsizebyte       | NUMERIC  | ProveCommit sector(32GiB) size in bytes.                   |
-| half_size_byte_qap | NUMERIC  | ProveCommit sector(32GiB) quality adjusted power in bytes. |
+| half_size_byte_qap | NUMERIC  | ProveCommit sector(32GiB) quality-adjusted power in bytes. |
 | sizebyte           | NUMERIC  | ProveCommit sector(64GiB) size in bytes.                   |
-| size_byte_qap      | NUMERIC  | ProveCommit sector(64GiB) quality adjusted power in bytes. |
+| size_byte_qap      | NUMERIC  | ProveCommit sector(64GiB) quality-adjusted power in bytes. |
 
 #### Response Example
 
@@ -760,7 +760,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 
 #### Description
 
-Sector size and pledges that are extended, expired, terminated or scheduled to expire based on their proposed date.
+Sector size and pledges that are extended, expired, terminated or scheduled to expire, based on their sector service periods.
 
 #### Request URL
 
@@ -1643,13 +1643,13 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 | stat_date               | DATE     | Refers to the date that data was recorded.           |
 | raw_bytes_gb            | NUMERIC  | Total sector size of miners.(Bytes / 32 GiB)         |
 | commit_pct_qa_adj       | NUMERIC  | Total committed pct verified QAP of miners.          |
-| commit_pledge           | NUMERIC  | Total committed initial pledge of day.               |
-| commit_pledge_per_bytes | NUMERIC  | Total committed initial pledge per raw bytes of day. |
-| commit_pledge_per_qap   | NUMERIC  | Total committed initial pledge per QAP of day.       |
+| commit_pledge           | NUMERIC  | Total committed initial pledge of the day.               |
+| commit_pledge_per_bytes | NUMERIC  | Total committed initial pledge per raw bytes of the day. |
+| commit_pledge_per_qap   | NUMERIC  | Total committed initial pledge per QAP of the day.       |
 | expire_pct_qa_adj       | NUMERIC  | Total expired pct verified QAP of miners.            |
-| expire_pledge           | NUMERIC  | Total expired initial pledge of day.                 |
-| expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of day.   |
-| expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of day.         |
+| expire_pledge           | NUMERIC  | Total expired initial pledge of the day.                 |
+| expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of the day.   |
+| expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of the day.         |
 
 #### Response Example
 
