@@ -54,7 +54,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -79,7 +79,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -113,7 +113,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -128,7 +128,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/deal_states_aggregate_daily?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -274,7 +274,7 @@ GET: /network_core/market-deals/deal_summary_statistics_daily
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -299,7 +299,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -333,7 +333,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -348,7 +348,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/deal_summary_statistics_daily?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -492,7 +492,7 @@ GET: /network_core/market-deals/top10_clients_by_active_deal_bytes
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -517,7 +517,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -551,7 +551,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -566,7 +566,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -665,7 +665,7 @@ GET: /network_core/market-deals/top10_clients_by_active_deal_count
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -690,7 +690,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -724,7 +724,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -739,7 +739,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_clients_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -838,7 +838,7 @@ GET: /network_core/market-deals/top10_clients_by_new_deal_bytes
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -863,7 +863,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -897,7 +897,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -912,7 +912,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1011,7 +1011,7 @@ GET: /network_core/market-deals/top10_clients_by_new_deal_count
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1036,7 +1036,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1070,7 +1070,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1085,7 +1085,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_clients_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1184,7 +1184,7 @@ GET: /network_core/market-deals/top10_providers_by_active_deal_bytes
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1209,7 +1209,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1243,7 +1243,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1258,7 +1258,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1358,7 +1358,7 @@ GET: /network_core/market-deals/top10_providers_by_active_deal_count
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1383,7 +1383,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1417,7 +1417,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1432,7 +1432,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_providers_by_active_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1532,7 +1532,7 @@ GET: /network_core/market-deals/top10_providers_by_new_deal_bytes
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1557,7 +1557,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1591,7 +1591,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1606,7 +1606,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_bytes?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1706,7 +1706,7 @@ GET: /network_core/market-deals/top10_providers_by_new_deal_count
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1731,7 +1731,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1765,7 +1765,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1780,7 +1780,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/top10_providers_by_new_deal_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1881,7 +1881,7 @@ GET: /network_core/market-deals/deal_client_headcount
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1906,7 +1906,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1940,7 +1940,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1955,7 +1955,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/deal_client_headcount?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
