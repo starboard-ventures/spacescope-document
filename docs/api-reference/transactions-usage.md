@@ -54,7 +54,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -79,7 +79,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -113,7 +113,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -128,7 +128,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_fee_overview_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -143,7 +143,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**                | **Type** | **Description**                                                                                            |
 | :-------------------------- | :------- | :--------------------------------------------------------------------------------------------------------- |
-| stat_date                   | DATE     | Refers to the date that data was recorded.                                                     |
+| stat_date                   | DATE     | Refers to the date the data was recorded.                                                     |
 | gas_sector_sealing          | NUMERIC  | The average gas cost of sealing a sector in the past 24 hours.                                             |
 | gas_storage_deal_publishing | NUMERIC  | The average gas cost of publishing a storage deal in the past 24 hours.                                    |
 | overestimation              | NUMERIC  | The average gas overestimation cost in the past 24 hours.                                                                                    |
@@ -213,8 +213,8 @@ GET: /network_core/transactions-usage/gas_fee_overview_h
 #### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The most recent date that the API includes. |
-| end_date     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The most recent date that the API includes. |
+| start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
+| end_date     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
 
 :::note
 
@@ -244,7 +244,7 @@ GET: /network_core/transactions-usage/gas_fee_overview_h
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z"
+url = "https://api-dev.spacescope.io/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z"
 
 payload={}
 headers = {
@@ -269,7 +269,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z"
+  url := "https://api-dev.spacescope.io/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z"
   method := "GET"
   client := &http.Client {
   }
@@ -303,7 +303,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -318,7 +318,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_fee_overview_h?end_hour=2022-07-01T00:00:00Z&start_hour=2022-07-01T00:00:00Z' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -333,7 +333,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**            | **Type**    | **Description**                                                                                                                     |
 | :---------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date | DATE        | Refers to the date that data was recorded.                                                                              |
+| stat_date | DATE        | Refers to the date the data was recorded.                                                                              |
 | hour_date               | TIMESTAMPTZ | Trunc hour of height.                                                                                                               |
 | precommit_cost_sector   | NUMERIC     | Average PreCommit Cost.                                                                                                             |
 | provecommit_cost_sector | NUMERIC     | Average ProveCommit Cost.                                                                                                           |
@@ -429,7 +429,7 @@ GET: /network_core/transactions-usage/network_fee_breakdown
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -454,7 +454,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -488,7 +488,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -503,7 +503,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/network_fee_breakdown?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -518,7 +518,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**           | **Type** | **Description**                                                                                                                                                   |
 | :--------------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date              | DATE     | Refers to the date that data was recorded.                                                                                                            |
+| stat_date              | DATE     | Refers to the date the data was recorded.                                                                                                            |
 | base_fee_burn          | NUMERIC  | Base fee burn.                                                                                                                                                    |
 | overestimation_fee     | NUMERIC  | Overestimation fee.                                                                                                                                               |
 | pre_commit_batch_fee   | NUMERIC  | PreCommit Batch Fee.                                                                                                                                              |
@@ -619,7 +619,7 @@ GET: /network_core/transactions-usage/gas_usage_msg_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -644,7 +644,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -678,7 +678,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -693,7 +693,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_usage_msg_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -708,7 +708,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**           | **Type** | **Description**                                                                      |
 | :--------------------- | :------- | :----------------------------------------------------------------------------------- |
-| stat_date              | DATE     | Refers to the date that data was recorded.                               |
+| stat_date              | DATE     | Refers to the date the data was recorded.                               |
 | total_gas_used         | NUMERIC  | Total amount of resources (or units of gas) consumed, in order to execute a message. |
 | prove_commit_sector    | NUMERIC  | Total gas used of (actor_family ='storageminer' and method = 7).                     |
 | pre_commit_sector      | NUMERIC  | Total gas used of (actor_family ='storageminer' and method = 6).                     |
@@ -801,7 +801,7 @@ GET: /network_core/transactions-usage/gas_distribution_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -826,7 +826,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -860,7 +860,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -875,7 +875,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_distribution_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -890,7 +890,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**                     | **Type** | **Description**                                                                   |
 | :------------------------------- | :------- | :-------------------------------------------------------------------------------- |
-| stat_date                        | DATE     | Refers to the date that data was recorded.                            |
+| stat_date                        | DATE     | Refers to the date the data was recorded.                            |
 | metric_type | VARCHAR  | precommit_batch_distribution or provecommit_batch_distribution .                  |
 | distribution_key                 | VARCHAR  | Buckets in size of 10.                                                            |
 | distribution_value               | NUMERIC  | Number of PreCommitSectorBatch count or ProveCommitAggregate count in the bucket. |
@@ -975,7 +975,7 @@ GET: /network_core/transactions-usage/gas_top_storage_provider_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1000,7 +1000,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1034,7 +1034,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1049,7 +1049,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1064,7 +1064,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                          |
 | miner_id             | TEXT     |    Id of miners.                  |
 | gas_used                   | NUMERIC   | base_fee_burn + over_estimation_burn + miner_tip. |
 
@@ -1140,7 +1140,7 @@ GET: /network_core/transactions-usage/gas_detail_message_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1165,7 +1165,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1199,7 +1199,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1214,7 +1214,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_detail_message_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1229,7 +1229,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**             | **Type** | **Description**                                                                                                 |
 | :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                          |
 | actor_family             | TEXT     | The short unversioned name of the actor that received the message.'All methods' is for all.                     |
 | method                   | BIGINT   | The successful method number to invoke. Only unique to the actor the method is being invoked on. (0 is for all) |
 | method_name              | TEXT     | The human readable name of method.                                                                              |
@@ -1335,7 +1335,7 @@ GET: /network_core/transactions-usage/gas_usage_detail_message_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1360,7 +1360,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1394,7 +1394,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1409,7 +1409,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/gas_usage_detail_message_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1424,7 +1424,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/g
 
 | **Variable**         | **Type** | **Description**                                                                                                 |
 | :------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                          |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                          |
 | actor_family         | TEXT     | The short unversioned name of the actor that received the message.'All methods' is for all.                     |
 | method               | BIGINT   | The successful method number to invoke. Only unique to the actor the method is being invoked on. (0 is for all) |
 | method_name          | TEXT     | The human readable name of method.                                                                              |

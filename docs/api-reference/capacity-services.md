@@ -4,15 +4,14 @@ sidebar_position: 3
 
 # Capacity & Services
 
-Capacity and services provides information on the Filecoin Network data storage capacity, services and onboarding process. 
+Capacity and services provides information on the Filecoin Network’s data storage capacity, storage services and onboarding processes. 
 
 ### Network Storage Capacity 
 
 
 #### Description
 
-The Filecoin network storage capacity in Raw Byte (RB) and Quality-Adjusted (QA) Power.
-
+The Filecoin Network storage capacity, presented in Raw Byte (RB) and Quality-Adjusted (QA) Power.
 
 #### Request URL
 
@@ -57,7 +56,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -82,7 +81,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -116,7 +115,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -131,7 +130,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -146,12 +145,12 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date                      | DATE     | Refers to the date that data was recorded.                                                                                                         |
+| stat_date                      | DATE     | Refers to the date the data was recorded.                                                                                                         |
 | total_qa_bytes_power           | NUMERIC  | This parameter measures the consensus power of stored data on the network, and is equal to Raw Byte Power multiplied by Sector Quality Multiplier. |
-| total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality Adjusted Power                                                                                               |
+| total_qa_bytes_power_increase  | NUMERIC  | Refers to the Daily change in Quality-Adjusted Power                                                                                               |
 | total_raw_bytes_power          | NUMERIC  | This measurement is the total size of all sectors in bytes.                                                                                        |
 | total_raw_bytes_power_increase | NUMERIC  | Refers to the daily change in Raw Byte Power                                                                                                       |
-| new_baseline_power             | NUMERIC  | The baseline power (in bytes) the network is targeting.                                                                                            |
+| new_baseline_power             | NUMERIC  | The baseline power (in bytes) targeted by the network.                                                                                           |
 
 #### Response Example
 
@@ -237,7 +236,7 @@ GET: /network_core/capacity-services/storage_state_d_v2
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -262,7 +261,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -296,7 +295,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -311,7 +310,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -326,7 +325,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**             | **Type** | **Description**                                                                                           |
 | ------------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date that data was recorded.                                                                |
+| stat_date                | DATE     | Refers to the date the data was recorded.                                                                |
 | active_fault             | NUMERIC  | The total storage size of outstanding faulted sectors that are not recovered or terminated.               |
 | active_fault_increase    | NUMERIC  | Daily change in active fault size.                                                        |
 | active_fault_avg_d       | NUMERIC  | Average days that a sector fault remains active on the Filecoin Network during the last 24 hours.         |
@@ -335,13 +334,13 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 | term_d                   | NUMERIC  | Daily terminated sector size in TiB.                                                                      |
 | term_d_increase          | NUMERIC  | Daily change in terminated sector size.                                                                   |
 | net_fault_d              | NUMERIC  | The net fault refers to fault_d - recover_d - term_d                                                      |
-| active_term_d            | NUMERIC  | Sectors that are scheduled to expire but get terminated actively by SPs.                                  |
+| active_term_d            | NUMERIC  | Sectors that are scheduled to expire, but has been terminated actively by SPs.                            |
 | active_term_m            | NUMERIC  | The total storage size of new active terminated sectors in the past 30 days.                              |
 | active_term_m_increase   | NUMERIC  | Daily change in active terminated sectors in the past 30 days.                           |
-| passive_term_d           | NUMERIC  | Sectors that are scheduled to expire but get terminated passively after 42 days.                          |
+| passive_term_d           | NUMERIC  | Sectors that are scheduled to expire, but have been terminated passively after 42 days.                   |
 | extend_size              | NUMERIC  | Sectors that are scheduled to expire but get extended during the last 24 hours.                           |
 | extend_size_increase     | NUMERIC  | Daily change in sector extension.                                                                         |
-| extend_size_qap          | NUMERIC  | Quality Adjusted Power of Sectors that are scheduled to expire but get extended during the last 24 hours. |
+| extend_size_qap          | NUMERIC  | Quality-Adjusted Power of Sectors that are scheduled to expire but got extended during the last 24 hours. |
 | extend_size_qap_increase | NUMERIC  | Daily change in sector QAP extension.                                                                     |
 
 #### Response Example
@@ -443,7 +442,7 @@ GET: /network_core/capacity-services/sector_onboarding_by_method
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -468,7 +467,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -502,7 +501,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -517,7 +516,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/sector_onboarding_by_method?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -532,7 +531,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**                 | **Type** | **Description**                                                                                      |
 | ---------------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date                    | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date                    | DATE     | Refers to the date the data was recorded.                                                           |
 | pre_commit_sector_size       | NUMERIC  | Daily PreCommitSector size in PiB.                                                                   |
 | pre_commit_sector_batch_size | NUMERIC  | Daily PreCommitSectorBatch size in PiB.                                                              |
 | pre_commit_total_size        | NUMERIC  | Refers to the sum of all PreCommit methods; pre_commit_sector_size + pre_commit_sector_batch_size    |
@@ -624,7 +623,7 @@ GET: /network_core/capacity-services/prove_commit_split_d_v2
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -649,7 +648,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -683,7 +682,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -698,7 +697,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/prove_commit_split_d_v2?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -713,11 +712,11 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 
 | **Variable**       | **Type** | **Description**                                            |
 | ------------------ | -------- | ---------------------------------------------------------- |
-| stat_date          | DATE     | Refers to the date that data was recorded.                 |
+| stat_date          | DATE     | Refers to the date the data was recorded.                 |
 | halfsizebyte       | NUMERIC  | ProveCommit sector(32GiB) size in bytes.                   |
-| half_size_byte_qap | NUMERIC  | ProveCommit sector(32GiB) quality adjusted power in bytes. |
+| half_size_byte_qap | NUMERIC  | ProveCommit sector(32GiB) quality-adjusted power in bytes. |
 | sizebyte           | NUMERIC  | ProveCommit sector(64GiB) size in bytes.                   |
-| size_byte_qap      | NUMERIC  | ProveCommit sector(64GiB) quality adjusted power in bytes. |
+| size_byte_qap      | NUMERIC  | ProveCommit sector(64GiB) quality-adjusted power in bytes. |
 
 #### Response Example
 
@@ -760,7 +759,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/p
 
 #### Description
 
-Sector size and pledges that are extended, expired, terminated or scheduled to expire based on their proposed date.
+Sector size and pledges that are extended, expired, terminated or scheduled to expire, based on their sector service periods.
 
 #### Request URL
 
@@ -796,7 +795,7 @@ GET: /network_core/capacity-services/sectors_schedule_expiration
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/sectors_schedule_expiration?state_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/sectors_schedule_expiration?state_date=2022-07-01"
 
 payload={}
 headers = {
@@ -821,7 +820,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/sectors_schedule_expiration?state_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/sectors_schedule_expiration?state_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -855,7 +854,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/sectors_schedule_expiration?state_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/sectors_schedule_expiration?state_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -870,7 +869,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/sectors_schedule_expiration?state_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/sectors_schedule_expiration?state_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -885,14 +884,14 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/s
 
 | **Variable**               | **Type** | **Description**                                                                          |
 | -------------------------- | -------- | ---------------------------------------------------------------------------------------- |
-| stat_date                  | DATE     | Refers to the date that data was recorded.                                               |
+| stat_date                  | DATE     | Refers to the date the data was recorded.                                               |
 | interest_date              | DATE     | The date of interest.                                                                    |
 | schedule_expire_bytes      | BIGINT   | The total bytes of sectors scheduled to expire on the date of interest.                  |
-| schedule_expire_bytes_qap  | DOUBLE   | The total quality adjusted power of sectors scheduled to expire on the date of interest. |
+| schedule_expire_bytes_qap  | DOUBLE   | The total quality-adjusted power of sectors scheduled to expire on the date of interest. |
 | extended_bytes             | BIGINT   | The total bytes of sectors that have been extended.                                      |
-| extended_bytes_qap         | DOUBLE   | The total quality adjusted power of sectors that have been extended.                     |
+| extended_bytes_qap         | DOUBLE   | The total quality-adjusted power of sectors that have been extended.                     |
 | terminated_bytes           | BIGINT   | The total bytes of sectors that have been terminated.                                    |
-| terminated_bytes_qap       | DOUBLE   | The total quality adjusted power of sectors that have been terminated.                   |
+| terminated_bytes_qap       | DOUBLE   | The total quality-adjusted power of sectors that have been terminated.                   |
 | expired_bytes              | BIGINT   | The total bytes of sectors that have expired.                                            |
 | potential_expire_bytes     | BIGINT   | Refers to scheduled_expire – terminated – extended – expired, in bytes.                  |
 | potential_expire_bytes_qap | DOUBLE   | Refers to scheduled_expire_qap – terminated_qap – extended_qap – expired_qap , in QAP.   |
@@ -997,7 +996,7 @@ GET: /network_core/capacity-services/network_block_reward
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1022,7 +1021,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1056,7 +1055,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1071,7 +1070,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/network_block_reward?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1086,7 +1085,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 | **Variable**        | **Type** | **Description**                                                                  |
 | ------------------- | -------- | -------------------------------------------------------------------------------- |
-| stat_date           | DATE     | Refers to the date that data was recorded.                                       |
+| stat_date           | DATE     | Refers to the date the data was recorded.                                       |
 | reward_per_wincount | NUMERIC  | Weighted block rewards awarded by the Filecoin Network during the last 24 hours. |
 
 #### Response Example
@@ -1167,7 +1166,7 @@ GET: /network_core/capacity-services/economics_sector_pledges_returns_32g_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1192,7 +1191,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1226,7 +1225,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1241,7 +1240,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_32g_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1256,7 +1255,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                           |
 | rewards              | NUMERIC  | Rewards awarded over 360 days                                                                        |
 | precommit_fil        | NUMERIC  | PreCommitSector gas fees                                                                             |
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
@@ -1359,7 +1358,7 @@ GET: /network_core/capacity-services/economics_sector_pledges_returns_64g_d
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1384,7 +1383,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1418,7 +1417,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1433,7 +1432,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/economics_sector_pledges_returns_64g_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1448,7 +1447,7 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/e
 
 | **Variable**         | **Type** | **Description**                                                                                      |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| stat_date            | DATE     | Refers to the date that data was recorded.                                                           |
+| stat_date            | DATE     | Refers to the date the data was recorded.                                                           |
 | rewards              | NUMERIC  | Rewards awarded over 360 days                                                                        |
 | precommit_fil        | NUMERIC  | PreCommitSector gas fees                                                                             |
 | provecommit_fil      | NUMERIC  | ProveCommitSector gas fees                                                                           |
@@ -1551,7 +1550,7 @@ GET: /network_core/capacity-services/commit_and_expire_pledge
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api-dev.spacescope.io/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -1576,7 +1575,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api-dev.spacescope.io/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -1610,7 +1609,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api-dev.spacescope.io/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
   }
@@ -1625,7 +1624,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api-dev.spacescope.io/api/v1/commit_and_expire_pledge?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
 ```
 
@@ -1640,16 +1639,16 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/c
 
 | **Variable**            | **Type** | **Description**                                      |
 | ----------------------- | -------- | ---------------------------------------------------- |
-| stat_date               | DATE     | Refers to the date that data was recorded.           |
+| stat_date               | DATE     | Refers to the date the data was recorded.           |
 | raw_bytes_gb            | NUMERIC  | Total sector size of miners.(Bytes / 32 GiB)         |
 | commit_pct_qa_adj       | NUMERIC  | Total committed pct verified QAP of miners.          |
-| commit_pledge           | NUMERIC  | Total committed initial pledge of day.               |
-| commit_pledge_per_bytes | NUMERIC  | Total committed initial pledge per raw bytes of day. |
-| commit_pledge_per_qap   | NUMERIC  | Total committed initial pledge per QAP of day.       |
+| commit_pledge           | NUMERIC  | Total committed initial pledge of the day.               |
+| commit_pledge_per_bytes | NUMERIC  | Total committed initial pledge per raw bytes of the day. |
+| commit_pledge_per_qap   | NUMERIC  | Total committed initial pledge per QAP of the day.       |
 | expire_pct_qa_adj       | NUMERIC  | Total expired pct verified QAP of miners.            |
-| expire_pledge           | NUMERIC  | Total expired initial pledge of day.                 |
-| expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of day.   |
-| expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of day.         |
+| expire_pledge           | NUMERIC  | Total expired initial pledge of the day.                 |
+| expire_pledge_per_bytes | NUMERIC  | Total expired initial pledge per raw bytes of the day.   |
+| expire_pledge_per_qap   | NUMERIC  | Total expired initial pledge per QAP of the day.         |
 
 #### Response Example
 
