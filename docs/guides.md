@@ -8,7 +8,7 @@ sidebar_position: 2
 
 All HTTP requests made against the SpaceScope API must be validated with an API Token. 
 
-The application for API Token is not available yet, however, there is a test token available: `ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq` if you’d like to play around with the APIs!
+The application for API Token is not available yet, however, there is a test token available: `ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe` if you’d like to play around with the APIs!
 
 
 ## Quick Start
@@ -43,7 +43,7 @@ url = "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -73,7 +73,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
+  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -100,7 +100,7 @@ var options = {
   'method': 'GET',
   'url': 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
 };
 request(options, function (error, response) {
@@ -114,7 +114,7 @@ request(options, function (error, response) {
 
 ```curl
 curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+--header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
 </TabItem>
@@ -171,7 +171,7 @@ During error scenarios, you may reference the `code` and `message` properties. O
 | :-------------- | :------- | :----------------------------------------------------------- |
 | 401             | 10011    | The token format error. It should have 'Bearer $token' set in the 'authorization' header. |
 | 401             | 10012    | The token has expired.                                       |
-| 200             | 30001    | SpaceScope API forbidden.                                    |
+| 200             | 30001    | SpaceScope API forbidden: quota limited / historical limited / API limited.                                   |
 | 200             | 30002    | SpaceScope API parameters error.                             |
 | 200             | 30003    | SpaceScope API internal server error.                        |
 | 200             | 30004    | SpaceScope API data are not ready yet.                       |
