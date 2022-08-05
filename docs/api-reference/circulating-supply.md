@@ -56,11 +56,11 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://api-dev.spacescope.io/api/v1/circulating_supply?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v1/network_core/circulating-supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -81,7 +81,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api-dev.spacescope.io/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v1/network_core/circulating-supply/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -90,7 +90,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
+  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -115,9 +115,9 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api-dev.spacescope.io/api/v1/circulating_supply?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v1/network_core/circulating-supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
 };
 request(options, function (error, response) {
@@ -130,8 +130,8 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api-dev.spacescope.io/api/v1/circulating_supply?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+curl --location --request GET 'https://api.spacescope.io/v1/network_core/circulating-supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
 </TabItem>
@@ -250,11 +250,11 @@ GET: /network_core/circulating-supply/network_locked_fil_breakdown
 ```python
 import requests
 
-url = "https://api-dev.spacescope.io/api/v1/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v1/network_core/circulating-supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -275,7 +275,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api-dev.spacescope.io/api/v1/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v1/network_core/circulating-supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -284,7 +284,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
+  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -309,9 +309,9 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api-dev.spacescope.io/api/v1/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v1/network_core/circulating-supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
 };
 request(options, function (error, response) {
@@ -324,8 +324,8 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api-dev.spacescope.io/api/v1/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+curl --location --request GET 'https://api.spacescope.io/v1/network_core/circulating-supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
 </TabItem>
