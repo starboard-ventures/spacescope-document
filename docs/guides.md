@@ -39,7 +39,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -64,7 +64,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -98,7 +98,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -113,7 +113,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
