@@ -138,18 +138,20 @@ h1 {
   align-items: center;
 }
 
-.navbar__title.text--truncate::before {
-  background: url("../../static/img/logo.svg") no-repeat;
+.navbar__brand::before {
+  background: url("../../static/img/font-logo.svg") no-repeat;
   content: "";
   display: flex;
-  height: 32px;
-  width: 35px;
+  height: 20px;
+  width: 152px;
   background-size: cover;
   margin-right: 0.3rem;
 }
-
-[data-theme="dark"] .navbar__title.text--truncate::before {
-  background: url("../../static/img/logo-dark.svg") no-repeat;
+.navbar__title.text--truncate{
+  display: none;
+}
+[data-theme="dark"] .navbar__brand::before {
+  background: url("../../static/img/font-logo-dark.svg") no-repeat;
   background-size: cover;
 }
 
