@@ -365,45 +365,45 @@ a,
 }
 
 h1 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 46px;
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 40px !important;
+  line-height: 46px !important;
 }
 
 h2 {
   /* H2-600 */
 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 40px;
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 30px !important;
+  line-height: 40px !important;
   /* identical to box height, or 115% */
 
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
 
   /* White */
 
-  font-variation-settings: 'slnt' 0;
+  font-variation-settings: 'slnt' 0 !important;
 }
 
 h3 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 28px !important;
+  line-height: 34px !important;
 }
 
 h4 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
 }
 
 .language-js {
