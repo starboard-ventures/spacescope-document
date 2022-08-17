@@ -199,7 +199,7 @@ Storage sector state based on active, faulty, terminated or recovered sectors du
 #### Request URL
 
 ```js
-GET: /network_core/capacity-services/storage_state_d_v2
+GET: /network_core/capacity-services/storage_state_d
 ```
 
 #### Request Parameters
@@ -236,7 +236,7 @@ GET: /network_core/capacity-services/storage_state_d_v2
 ```python
 import requests
 
-url = "https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -261,7 +261,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -295,7 +295,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -310,7 +310,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d_v2?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api.spacescope.io/v1/network_core/capacity-services/storage_state_d?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
