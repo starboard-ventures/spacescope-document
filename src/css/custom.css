@@ -365,7 +365,7 @@ a,
 }
 
 h1 {
-  font-family: 'Inter' !important;
+  font-family: 'Inter', 'Roboto' !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 40px !important;
@@ -375,7 +375,7 @@ h1 {
 h2 {
   /* H2-600 */
 
-  font-family: 'Inter' !important;
+  font-family: 'Inter', 'Roboto' !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 30px !important;
@@ -391,7 +391,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Inter' !important;
+  font-family: 'Inter', 'Roboto' !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 28px !important;
@@ -399,7 +399,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Inter' !important;
+  font-family: 'Inter', 'Roboto' !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 18px !important;
