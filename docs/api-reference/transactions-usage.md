@@ -10,6 +10,7 @@ Transactions and usage provides information on the Filecoin Network gas fees and
 
 #### Description
 
+Overview of gas fee occurred on the Filecoin Network during the last 24 hours.
 
 #### Request URL
 
@@ -203,6 +204,7 @@ curl --location --request GET 'https://api.spacescope.io/v1/network_core/transac
 
 #### Description
 
+Overview of gas fee occurred on the Filecoin Network during the previous hour.
 
 #### Request URL
 
@@ -930,175 +932,11 @@ curl --location --request GET 'https://api.spacescope.io/v1/network_core/transac
 
 <hr />
 
-### Top 10 Storage Provider by Gas Usage
-
-#### Description
-
-
-#### Request URL
-
-```js
-GET: /network_core/transactions-usage/gas_top_storage_provider_d
-```
-
-#### Request Parameters
-| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
-| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Start date of the selected period (Optional). | 2022-07-01  | The most recent date that the API includes. |
-| end_date     | STRING   | End date of the selected period (Optional).   | 2022-07-01  | The most recent date that the API includes. |
-
-:::note
-
- The difference between end_date and start_date should be smaller than 31 days.
-
-:::
-
-#### Request Examples
-
-<details><summary>Code</summary>
-<div>
-
-
-<Tabs
-  groupId="language"
-  defaultValue="Python"
-  values={[
-    { label: 'Python', value: 'Python' },
-    { label: 'GO', value: 'GO' },
-    { label: 'NodeJS', value: 'NodeJS' },
-    { label: 'cURL', value: 'cURL' }
-  ]
-}>
-
-<TabItem value="Python">
-
-```python
-import requests
-
-url = "https://api.spacescope.io/v1/network_core/transactions-usage/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
-
-payload={}
-headers = {
-  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
-}
-
-response = requests.request("GET", url, headers=headers, data=payload)
-
-print(response.text)
-
-```
-
-</TabItem>
-
-<TabItem value="GO">
-
-```go
-package main
-import (
-  "fmt"
-  "net/http"
-  "io/ioutil"
-)
-func main() {
-  url := "https://api.spacescope.io/v1/network_core/transactions-usage/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01"
-  method := "GET"
-  client := &http.Client {
-  }
-  req, err := http.NewRequest(method, url, nil)
-  if err != nil {
-    fmt.Println(err)
-    return
-  }
-  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
-  res, err := client.Do(req)
-  if err != nil {
-    fmt.Println(err)
-    return
-  }
-  defer res.Body.Close()
-
-  body, err := ioutil.ReadAll(res.Body)
-  if err != nil {
-    fmt.Println(err)
-    return
-  }
-  fmt.Println(string(body))
-}
-```
-
-</TabItem>
-
-<TabItem value="NodeJS">
-
-```js
-var request = require('request');
-var options = {
-  'method': 'GET',
-  'url': 'https://api.spacescope.io/v1/network_core/transactions-usage/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01',
-  'headers': {
-    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
-  }
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-```
-
-</TabItem>
-<TabItem value="cURL">
-
-```curl
-curl --location --request GET 'https://api.spacescope.io/v1/network_core/transactions-usage/gas_top_storage_provider_d?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
-```
-
-</TabItem>
-</Tabs>
-
-</div>
-</details>
-
-
-#### Response Schema
-
-| **Variable**             | **Type** | **Description**                                                                                                 |
-| :----------------------- | :------- | :-------------------------------------------------------------------------------------------------------------- |
-| stat_date                | DATE     | Refers to the date the data was recorded.                                                          |
-| miner_id             | TEXT     |    Id of miners.                  |
-| gas_used                   | NUMERIC   | base_fee_burn + over_estimation_burn + miner_tip. |
-
-
-#### Response Example
-
-<details><summary>Response</summary>
-<div>
-
-```Json
-{
-   "request_id": "4e14a4aa-2368-4029-a660-5a883c0c29f1#662",
-   "code": 0,
-   "message": "success.",
-   "data": [
-       {
-           "stat_date": "2022-07-01T00:00:00Z",
-           "miner_id": "f01114589",
-           "gas_used": 1313.54506467561
-       },
-     ……
-   ]
-}
-
-```
-</div>
-</details>
-
-<hr />
-
 ### Daily Gas Detail Message
 
 #### Description
 
+Gas fee for messages posted onto the Filecoin Network based on the method.
 
 #### Request URL
 
@@ -1294,6 +1132,7 @@ curl --location --request GET 'https://api.spacescope.io/v1/network_core/transac
 
 #### Description
 
+Average gas fee for messages posted onto the Filecoin Network based on the method.
 
 #### Request URL
 
