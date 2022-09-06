@@ -96,6 +96,11 @@ const config = {
           },
           {
             href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
+            className: "sign-in-link",
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
             className: "header-github-link",
             "title": "GitHub",
             position: 'right',
@@ -107,7 +112,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://observablehq.com/@starboard',
+            href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
             className: "header-observable-link",
             "title": "ObservableHQ",
             position: 'right',
@@ -128,18 +133,24 @@ const config = {
       },
       // 
       footer: {
-        style: 'dark',
+        // style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with <a href='https://www.starboard.ventures/' target='blank'>Starboard</a>.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
       docs: {
         sidebar: {
           hideable: true,
         },
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        // respectPrefersColorScheme: true,
+
+      }
     }),
   themes: [
     [

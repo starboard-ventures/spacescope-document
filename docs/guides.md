@@ -8,11 +8,12 @@ sidebar_position: 2
 
 All HTTP requests made against the SpaceScope API must be validated with an API Token. 
 
-The application for API Token is not open now. Feel free to use the test token `ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq` and play around with the APIs!
+The application for API Token is not available yet, however, there is a test token available: `ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe` if you’d like to play around with the APIs!
+
 
 ## Quick Start
 
-### QUICK START CODE EXAMPLE
+#### Quick Start Code Example
 
 
 <details open><summary>Code</summary>
@@ -38,11 +39,11 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -63,7 +64,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -72,7 +73,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq")
+  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -97,9 +98,9 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
 };
 request(options, function (error, response) {
@@ -112,8 +113,8 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_eNRrQsxAcQfWJgElKNVKfdtgYzSBpmNOPrZq'
+curl --location --request GET 'https://api.spacescope.io/v1/network_core/network_storage_capacity?end_date=2022-07-01&start_date=2022-07-01' \
+--header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
 </TabItem>
@@ -122,8 +123,9 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 </div>
 </details>
 
-### RETURN DATA EXAMPLE
+#### Return Data Example
 
+All endpoints return data in JSON format with the results of your query under `data` if the call is successful.
 
 <details open><summary>Response</summary>
 <div>
@@ -150,32 +152,32 @@ curl --location --request GET 'https://data-api-test.starboard.ventures/api/v1/n
 
 ## Errors
 
-### HTTP STATUS CODES
+#### HTTP Status Codes
 
 The API uses standard HTTP status codes to indicate the success or failure of an API call.
-- **200 (OK)**: Standard response for successful HTTP requests. The actual response will depend on the request method used.
-- **400 (Bad Request)**: The server cannot or will not process the request due to an apparent client error.
-- **401 (Unauthorized)**: The user does not have valid authentication credentials for the target resource.
-- **500 (Internal Server Error)**: A generic error message is given when an unexpected condition is encountered, and no more specific message is suitable.
-- **502 (Bad Gateway)**:  The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+- `200 (OK)`: Standard response for successful HTTP requests. The actual response will depend on the request method used.
+- `400 (Bad Request)`: The server cannot or will not process the request due to an apparent client error.
+- `401 (Unauthorized)`: The user does not have valid authentication credentials for the target resource.
+- `500 (Internal Server Error)`: A generic error message is given when an unexpected condition is encountered, and no other error message is suitable.
+- `502 (Bad Gateway)`:  The server was acting as a gateway or proxy and received an invalid response from the upstream server.
 
 
-### ERROR RESPONSE CODES
+#### Error Response Codes
 
-During error scenarios you may reference the **code** and **message** properties. One of the API error codes below will be returned if applicable.
+During error scenarios, you may reference the `code` and `message` properties. One of the API error codes below will be returned if applicable.
 
 
 | **HTTP Status** | **Code** | **Message**                                                  |
 | :-------------- | :------- | :----------------------------------------------------------- |
 | 401             | 10011    | The token format error. It should have 'Bearer $token' set in the 'authorization' header. |
 | 401             | 10012    | The token has expired.                                       |
-| 200             | 30001    | SpaceScope API forbidden.                                    |
+| 200             | 30001    | SpaceScope API forbidden: quota limited / historical limited / API limited.                                   |
 | 200             | 30002    | SpaceScope API parameters error.                             |
 | 200             | 30003    | SpaceScope API internal server error.                        |
 | 200             | 30004    | SpaceScope API data are not ready yet.                       |
 
 
 ## Daily Update Time
-If not specified, the daily updates (for T-1 data) are normally finished at **09:00 PM UTC** every day. 
+If unspecified, the daily updates (for T-1 data) will normally be available at `09:00 PM UTC` every day. 
 
-For example, the data for **July 1, 2022 UTC** should be ready at **09:00 PM, July 2, 2022, UTC.**
+For example, the data for `July 1, 2022 UTC` should be ready at `09:00 PM, July 2, 2022 UTC`.
