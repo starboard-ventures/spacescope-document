@@ -437,6 +437,9 @@ p {
 [data-theme="dark"] code {
   background: #1a22269c !important;
 }
+[data-theme="dark"] strong code {
+  background: #49575e9c !important;
+}
 
 [data-theme="dark"] .theme-admonition {
   background: #1A2226;
