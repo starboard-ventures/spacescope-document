@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SpaceScope',
-  tagline: 'SpaceScope are cool',
+  title: 'Spacescope',
+  tagline: 'Spacescope are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'StarBoard', // Usually your GitHub org/user name.
-  projectName: 'SpaceScope Document', // Usually your repo name.
+  projectName: 'Spacescope Document', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -87,7 +87,7 @@ const config = {
           href: 'https://spacescope.io',
           target: '_self',
         },
-        title: 'SpaceScope',
+        title: 'Spacescope',
         hideOnScroll: true,
         items: [
           {
