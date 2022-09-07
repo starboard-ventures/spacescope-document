@@ -406,6 +406,10 @@ h4 {
   line-height: 24px !important;
 }
 
+h1 a,h2 a,h3 a,h4 a{
+  font-size: unset !important;
+}
+
 .language-js {
   border-radius: 0px;
 }
