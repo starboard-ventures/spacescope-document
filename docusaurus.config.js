@@ -81,6 +81,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        logo: {
+          alt: 'Utili Logo',
+          src: 'https://file.utili.xyz/UtiliSmall.png',
+          href: 'https://spacescope.io',
+          target: '_self',
+        },
         title: 'SpaceScope',
         hideOnScroll: true,
         items: [
@@ -105,30 +111,30 @@ const config = {
             "title": "GitHub",
             position: 'right',
           },
-          {
-            href: 'https://twitter.com/Starboard_V',
-            className: "header-twitter-link",
-            "title": "Twitter",
-            position: 'right',
-          },
-          {
-            href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
-            className: "header-observable-link",
-            "title": "ObservableHQ",
-            position: 'right',
-          },
-          {
-            href: 'https://dashboard.starboard.ventures/',
-            className: "header-dashboard-link",
-            "title": "Network Health Dashboard",
-            position: 'right',
-          },
-          {
-            href: 'https://filecoinproject.slack.com/archives/C03Q3K96BQU',
-            className: "header-slack-link",
-            "title": "Slack",
-            position: 'right',
-          },
+          // {
+          //   href: 'https://twitter.com/Starboard_V',
+          //   className: "header-twitter-link",
+          //   "title": "Twitter",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
+          //   className: "header-observable-link",
+          //   "title": "ObservableHQ",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://dashboard.starboard.ventures/',
+          //   className: "header-dashboard-link",
+          //   "title": "Network Health Dashboard",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://filecoinproject.slack.com/archives/C03Q3K96BQU',
+          //   className: "header-slack-link",
+          //   "title": "Slack",
+          //   position: 'right',
+          // },
         ],
       },
       // 
