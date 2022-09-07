@@ -305,9 +305,9 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/sector_eco
 | stat_date            | DATE     | Refers to the date the data was recorded.                                                           |
 | sector_rewards_360d_32gib              | NUMERIC  | Projected rewards awarded to a 32GiB sector over 360 days.                                                                        |
 | sector_precommit_fee_32gib        | NUMERIC  | PreCommitSector gas fees per 32 GiB sector (one-time cost).                                                                             |
-| sector_precommit_agg_fee_32gib      | NUMERIC  | PreCommitSectorBatch gas fees per 32 GiB sector (one-time cost for batch method).                                                                           |
+| sector_precommit_agg_fee_32gib      | NUMERIC  | PreCommitSectorBatch gas fees per 32 GiB sector (one-time cost for a single sector).                                                                           |
 | sector_provecommit_fee_32gib    | NUMERIC  | ProveCommitSector gas fees per 32 GiB sector (one-time cost).                                                                       |
-| sector_provecommit_agg_fee_32gib  | NUMERIC  | ProveCommitAggregate gas fees per 32 GiB sector (one-time cost for batch method).                                                                       |
+| sector_provecommit_agg_fee_32gib  | NUMERIC  | ProveCommitAggregate gas fees per 32 GiB sector (one-time cost for a single sector).                                                                       |
 | sector_windowedpost_fee_360d_32gib           | NUMERIC  | Refers to SubmitWindowedPoSt method fees per 32 GiB over 360 days.|
 | sector_profit_360d_32gib               | NUMERIC  | Refers to the projected 360 days reward of a 32 GiB sector, less the sum of projected PreCommit fees, projected ProveCommit fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.                                |
 | sector_profit_agg_360d_32gib           | NUMERIC  | Refers to the projected 360 days reward of a 32 GiB sector, less the sum of projected PreCommitSectorBatch fees, projected ProveCommitAggregate fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.          |
@@ -317,9 +317,9 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/sector_eco
 | profit_over_pledge_agg_32gib  | NUMERIC  | Refers to the projected 360 days reward of an aggregated 32 GiB sector divided by the initial pledge of the same sector.                                                                 |
 | sector_rewards_360d_64gib              | NUMERIC  | Projected rewards awarded to a 64GiB sector over 360 days.                                                                        |
 | sector_precommit_fee_64gib        | NUMERIC  | PreCommitSector gas fees per 64 GiB sector (one-time cost).                                                                             |
-| sector_precommit_agg_fee_64gib      | NUMERIC  | PreCommitSectorBatch gas fees per 64 GiB sector (one-time cost for batch method).                                                                           |
+| sector_precommit_agg_fee_64gib      | NUMERIC  | PreCommitSectorBatch gas fees per 64 GiB sector (one-time cost for a single sector).                                                                           |
 | sector_provecommit_fee_64gib    | NUMERIC  | ProveCommitSector gas fees per 64 GiB sector (one-time cost).                                                                       |
-| sector_provecommit_agg_fee_64gib  | NUMERIC  | ProveCommitAggregate gas fees per 64 GiB sector (one-time cost for batch method).                                                                       |
+| sector_provecommit_agg_fee_64gib  | NUMERIC  | ProveCommitAggregate gas fees per 64 GiB sector (one-time cost for a single sector).                                                                       |
 | sector_windowedpost_fee_360d_64gib           | NUMERIC  | Refers to SubmitWindowedPoSt method fees per 64 GiB over 360 days.|
 | sector_profit_360d_64gib               | NUMERIC  | Refers to the projected 360 days reward of a 64 GiB sector, less the sum of projected PreCommit fees, projected ProveCommit fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.                                |
 | sector_profit_agg_360d_64gib           | NUMERIC  | Refers to the projected 360 days reward of a 64 GiB sector, less the sum of projected PreCommitSectorBatch fees, projected ProveCommitAggregate fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.          |
