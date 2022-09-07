@@ -140,7 +140,7 @@ const config = {
       // 
       footer: {
         // style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with <a href='https://www.starboard.ventures/' target='blank'>Starboard</a>.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Spacescope, Inc. Built with <a href='https://spacescope.io/' target='blank'>Spacescope</a>.`,
       },
       // prism: {
       //   theme: lightCodeTheme,
