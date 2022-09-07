@@ -348,7 +348,9 @@ a,
 .theme-doc-sidebar-container>div>a b {
   display: none;
 }
-
+.theme-doc-sidebar-container>div>a img {
+  display: none;
+}
 /* body */
 
 .markdown a {
