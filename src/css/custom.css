@@ -434,12 +434,12 @@ p {
   background: #1A2226 !important;
 }
 
-[data-theme="dark"] code {
+[data-theme="dark"] code.codeBlockLines_e6Vv {
   background: #1a22269c !important;
 }
-[data-theme="dark"] strong code,[data-theme="dark"] p code {
+/* [data-theme="dark"] strong code,[data-theme="dark"] p code {
   background: #49575e9c !important;
-}
+} */
 
 [data-theme="dark"] .theme-admonition {
   background: #1A2226;
