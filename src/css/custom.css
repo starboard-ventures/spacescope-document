@@ -349,7 +349,7 @@ a,
   display: none;
 }
 .theme-doc-sidebar-container>div>a img {
-  display: none;
+  display: none !important;
 }
 /* body */
 
