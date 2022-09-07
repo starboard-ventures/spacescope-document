@@ -256,7 +256,7 @@ a,
 /* header */
 
 [data-theme="dark"] input {
-  font-family: 'Inter';
+  font-family: 'Inter', 'Roboto', sans-serif !important;
 }
 
 .sign-in-link {
@@ -290,7 +290,7 @@ a,
   content: 'Sign In';
   /* Body1-500 */
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -315,7 +315,7 @@ a,
 
 /* menu */
 .menu {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 700;
 }
@@ -352,7 +352,7 @@ a,
 /* body */
 
 .markdown a {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -365,7 +365,7 @@ a,
 }
 
 h1 {
-  font-family: 'Inter', 'Roboto' !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 40px !important;
@@ -375,7 +375,7 @@ h1 {
 h2 {
   /* H2-600 */
 
-  font-family: 'Inter', 'Roboto' !important;
+  font-family: 'Inter','Roboto', sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 30px !important;
@@ -391,7 +391,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Inter', 'Roboto' !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 28px !important;
@@ -399,14 +399,17 @@ h3 {
 }
 
 h4 {
-  font-family: 'Inter', 'Roboto' !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 18px !important;
   line-height: 24px !important;
 }
 
-h1 a,h2 a,h3 a,h4 a{
+h1 a,
+h2 a,
+h3 a,
+h4 a {
   font-size: unset !important;
 }
 
@@ -420,7 +423,7 @@ details {
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -450,7 +453,7 @@ p {
 
 [data-theme="dark"] thead th {
   background: #263238;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -488,7 +491,7 @@ p {
 .tabs__item {
   padding: 0px;
   margin-right: 35px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -507,7 +510,7 @@ p {
 }
 
 .theme-doc-toc-desktop .table-of-contents__link {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
