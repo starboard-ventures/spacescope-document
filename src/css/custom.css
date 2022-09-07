@@ -437,7 +437,7 @@ p {
 [data-theme="dark"] code {
   background: #1a22269c !important;
 }
-[data-theme="dark"] strong code {
+[data-theme="dark"] strong code,[data-theme="dark"] p code {
   background: #49575e9c !important;
 }
 
