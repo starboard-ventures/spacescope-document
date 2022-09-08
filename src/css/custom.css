@@ -348,7 +348,9 @@ a,
 .theme-doc-sidebar-container>div>a b {
   display: none;
 }
-
+.theme-doc-sidebar-container>div>a img {
+  display: none !important;
+}
 /* body */
 
 .markdown a {
@@ -527,4 +529,8 @@ p {
 [data-theme="dark"] .breadcrumbs__link {
   color: #1DE9B6 !important;
 
+}
+
+.navbar__logo{
+  display: none;
 }

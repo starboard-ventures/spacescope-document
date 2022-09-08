@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SpaceScope',
-  tagline: 'SpaceScope are cool',
+  title: 'Spacescope',
+  tagline: 'Spacescope are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'StarBoard', // Usually your GitHub org/user name.
-  projectName: 'SpaceScope Document', // Usually your repo name.
+  projectName: 'Spacescope Document', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -81,7 +81,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'SpaceScope',
+        logo: {
+          alt: 'Utili Logo',
+          src: 'https://file.utili.xyz/UtiliSmall.png',
+          href: 'https://spacescope.io',
+          target: '_self',
+        },
+        title: 'Spacescope',
         hideOnScroll: true,
         items: [
           {
@@ -105,36 +111,36 @@ const config = {
             "title": "GitHub",
             position: 'right',
           },
-          {
-            href: 'https://twitter.com/Starboard_V',
-            className: "header-twitter-link",
-            "title": "Twitter",
-            position: 'right',
-          },
-          {
-            href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
-            className: "header-observable-link",
-            "title": "ObservableHQ",
-            position: 'right',
-          },
-          {
-            href: 'https://dashboard.starboard.ventures/',
-            className: "header-dashboard-link",
-            "title": "Network Health Dashboard",
-            position: 'right',
-          },
-          {
-            href: 'https://filecoinproject.slack.com/archives/C03Q3K96BQU',
-            className: "header-slack-link",
-            "title": "Slack",
-            position: 'right',
-          },
+          // {
+          //   href: 'https://twitter.com/Starboard_V',
+          //   className: "header-twitter-link",
+          //   "title": "Twitter",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://observablehq.com/@starboard/starboard-filecoin-data-index',
+          //   className: "header-observable-link",
+          //   "title": "ObservableHQ",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://dashboard.starboard.ventures/',
+          //   className: "header-dashboard-link",
+          //   "title": "Network Health Dashboard",
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://filecoinproject.slack.com/archives/C03Q3K96BQU',
+          //   className: "header-slack-link",
+          //   "title": "Slack",
+          //   position: 'right',
+          // },
         ],
       },
       // 
       footer: {
         // style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} SpaceScope, Inc. Built with <a href='https://www.starboard.ventures/' target='blank'>Starboard</a>.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Spacescope.`,
       },
       // prism: {
       //   theme: lightCodeTheme,

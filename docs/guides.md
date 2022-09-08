@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Authentication
 
-All HTTP requests made against the SpaceScope API must be validated with an API Token. 
+All HTTP requests made against the Spacescope API must be validated with an API Token. 
 
 An API test token is available at `ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe`. Feel free to test and play around with the test token first!
 
@@ -169,10 +169,10 @@ In the event that an error occurs, you may reference the `code` and `message` pr
 | :-------------- | :------- | :----------------------------------------------------------- |
 | 401             | 10011    | The token format error. It should have 'Bearer $token' set in the 'authorization' header. |
 | 401             | 10012    | The token has expired.                                       |
-| 200             | 30001    | SpaceScope API forbidden: quota limited / historical limited / API limited.                                   |
-| 200             | 30002    | SpaceScope API parameters error.                             |
-| 200             | 30003    | SpaceScope API internal server error.                        |
-| 200             | 30004    | SpaceScope API data are not ready yet.                       |
+| 200             | 30001    | Spacescope API forbidden: quota limited / historical limited / API limited.                                   |
+| 200             | 30002    | Spacescope API parameters error.                             |
+| 200             | 30003    | Spacescope API internal server error.                        |
+| 200             | 30004    | Spacescope API data are not ready yet.                       |
 
 
 ## Daily Update Time
