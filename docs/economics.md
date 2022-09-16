@@ -142,7 +142,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/block_rewa
 | **Variable**        | **Type** | **Description**                                                                  |
 | ------------------- | -------- | -------------------------------------------------------------------------------- |
 | stat_date           | DATE     | Refers to the date the data was recorded.                                       |
-| reward_per_wincount | NUMERIC  | Weighted block rewards awarded by the Filecoin Network during the last 24 hours. |
+| reward_per_wincount | NUMERIC  | Weighted average block rewards awarded by the Filecoin Network per WinCount during the last 24 hours. |
 
 #### Response Example
 
@@ -308,7 +308,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/sector_eco
 | sector_precommit_agg_fee_32gib      | NUMERIC  | PreCommitSectorBatch gas fees per 32 GiB sector (one-time cost for a single sector).                                                                           |
 | sector_provecommit_fee_32gib    | NUMERIC  | ProveCommitSector gas fees per 32 GiB sector (one-time cost).                                                                       |
 | sector_provecommit_agg_fee_32gib  | NUMERIC  | ProveCommitAggregate gas fees per 32 GiB sector (one-time cost for a single sector).                                                                       |
-| sector_windowedpost_fee_360d_32gib           | NUMERIC  | Refers to SubmitWindowedPoSt fees per 32 GiB sector over 360 days.|
+| sector_windowedpost_fee_360d_32gib           | NUMERIC  | Refers to SubmitWindowedPoSt fees per message of 32 GiB sectors.|
 | sector_profit_360d_32gib               | NUMERIC  | Refers to the projected 360 days reward of a 32 GiB sector, less the sum of projected PreCommit fees, projected ProveCommit fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.                                |
 | sector_profit_agg_360d_32gib           | NUMERIC  | Refers to the projected 360 days reward of a 32 GiB sector, less the sum of projected PreCommitSectorBatch fees, projected ProveCommitAggregate fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.          |
 | sector_initial_pledge_32gib       | NUMERIC  | Refers to the sum of Initial Storage Pledge of a 32GiB sector (20 days equivalent of projected rewards) and Initial Consensus Pledge. |
@@ -320,7 +320,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/sector_eco
 | sector_precommit_agg_fee_64gib      | NUMERIC  | PreCommitSectorBatch gas fees per 64 GiB sector (one-time cost for a single sector).                                                                           |
 | sector_provecommit_fee_64gib    | NUMERIC  | ProveCommitSector gas fees per 64 GiB sector (one-time cost).                                                                       |
 | sector_provecommit_agg_fee_64gib  | NUMERIC  | ProveCommitAggregate gas fees per 64 GiB sector (one-time cost for a single sector).                                                                       |
-| sector_windowedpost_fee_360d_64gib           | NUMERIC  | Refers to SubmitWindowedPoSt fees per 64 GiB sector over 360 days.|
+| sector_windowedpost_fee_360d_64gib           | NUMERIC  | Refers to SubmitWindowedPoSt fees per message of 64 GiB sectors.|
 | sector_profit_360d_64gib               | NUMERIC  | Refers to the projected 360 days reward of a 64 GiB sector, less the sum of projected PreCommit fees, projected ProveCommit fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.                                |
 | sector_profit_agg_360d_64gib           | NUMERIC  | Refers to the projected 360 days reward of a 64 GiB sector, less the sum of projected PreCommitSectorBatch fees, projected ProveCommitAggregate fees, and the projected 360 days SubmitWindowedPoSt fee of the same sector.          |
 | sector_initial_pledge_64gib       | NUMERIC  | Refers to the sum of Initial Storage Pledge of a 64GiB sector (20 days equivalent of projected rewards) and Initial Consensus Pledge. |
