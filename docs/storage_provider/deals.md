@@ -865,7 +865,7 @@ Revenue for storage deals of the storage providers.
 #### Request URL
 
 ```js
-GET: /storage_provider/deals/deal_price
+GET: /storage_provider/deals/deal_revenue
 ```
 
 #### Request Parameters
@@ -899,7 +899,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://api.spacescope.io/v2/storage_provider/deals/deal_price?state_date=2022-10-01&miner_id=f0110804"
+url = "https://api.spacescope.io/v2/storage_provider/deals/deal_revenue?state_date=2022-10-01&miner_id=f0110804"
 
 payload={}
 headers = {
@@ -924,7 +924,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api.spacescope.io/v2/storage_provider/deals/deal_price?state_date=2022-10-01&miner_id=f0110804"
+  url := "https://api.spacescope.io/v2/storage_provider/deals/deal_revenue?state_date=2022-10-01&miner_id=f0110804"
   method := "GET"
   client := &http.Client {
   }
@@ -958,7 +958,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.spacescope.io/v2/storage_provider/deals/deal_price?state_date=2022-10-01&miner_id=f0110804',
+  'url': 'https://api.spacescope.io/v2/storage_provider/deals/deal_revenue?state_date=2022-10-01&miner_id=f0110804',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -973,7 +973,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api.spacescope.io/v2/storage_provider/deals/deal_price?state_date=2022-10-01&miner_id=f0110804' \
+curl --location --request GET 'https://api.spacescope.io/v2/storage_provider/deals/deal_revenue?state_date=2022-10-01&miner_id=f0110804' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
