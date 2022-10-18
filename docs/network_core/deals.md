@@ -330,10 +330,10 @@ curl --location --request GET 'https://api.spacescope.io/v2/deals/deal_size?end_
 | stat_date                               | DATE     | Refers to the date the data was recorded.                                           |
 | total_regular_deal_sizes        | NUMERIC  | Cumulative deal size for regular deals in bytes, including active, expired, and terminated ones.                                                  |
 | total_verified_deal_sizes       | NUMERIC  | Cumulative deal size for verified deals in bytes, including active, expired, and terminated ones.                                                   |
-| daily_proposed_regular_deal_size        | NUMERIC  | The deal size for regular deals in bytes, calculated in the last 24 hours.                                          |
-| daily_proposed_verified_deal_size       | NUMERIC  | The deal size for verified deals in bytes, calculated in the last 24 hours.                                        |
-| daily_activated_regular_deal_size        | NUMERIC  | The deal size for activated regular deals in bytes, calculated in the last 24 hours.                                       |
-| daily_activated_verified_deal_size       | NUMERIC  | The deal size for activated verified deals in bytes, calculated in the last 24 hours.                                       |
+| daily_proposed_regular_deal_size        | NUMERIC  | The deal size for regular deals that are newly proposed (may not be activated yet), calculated in the past 24 hours.                                          |
+| daily_proposed_verified_deal_size       | NUMERIC  | The deal size for verified deals that are newly proposed (may not be activated yet), calculated in the past 24 hours.                                        |
+| daily_activated_regular_deal_size        | NUMERIC  | The deal size for regular deals that are newly activated and started to be fulfilled, calculated in the past 24 hours.                                        |
+| daily_activated_verified_deal_size       | NUMERIC  | The deal size for verified deals that are newly activated and started to be fulfilled, calculated in the past 24 hours.                          |
 | active_regular_deal_size                | NUMERIC   | The active regular deals in bytes.                                         |
 | active_verified_deal_size               | NUMERIC   | The active verified deals in bytes.                                        |
 | daily_slashed_regular_deal_size                | NUMERIC  | The deal size for slashed regular deals in bytes, calculated in the last 24 hours.                                           |

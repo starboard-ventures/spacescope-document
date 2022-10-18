@@ -142,7 +142,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/economics/block_rewa
 | **Variable**        | **Type** | **Description**                                                                  |
 | ------------------- | -------- | -------------------------------------------------------------------------------- |
 | stat_date           | DATE     | Refers to the date the data was recorded.                                       |
-| reward_per_wincount | NUMERIC  | Weighted average block rewards awarded by the Filecoin Network per WinCount during the last 24 hours. |
+| reward_per_wincount | NUMERIC  | Weighted average block rewards awarded by the Filecoin Network per WinCount in the past 24 hours. |
 
 #### Response Example
 

@@ -313,14 +313,14 @@ curl --location --request GET 'https://api.spacescope.io/v2/power/storage_state?
 | ------------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
 | stat_date                | DATE     | Refers to the date the data was recorded.                                                                |
 | active_fault_rbp             | NUMERIC  | The total raw bytes storage power in TiB of outstanding faulted sectors that are not recovered or terminated.               |
-| avg_days_active_fault       | NUMERIC  | Average days that a sector fault remains active on the Filecoin Network during the last 24 hours.         |
+| avg_days_active_fault       | NUMERIC  | Average days that a sector fault remains active on the Filecoin Network during the past 24 hours.         |
 | daily_new_fault_rbp                  | NUMERIC  | Daily new faulted sector raw bytes power in TiB.                                                                           |
 | daily_new_recover_rbp                | NUMERIC  | Daily new recovered sector raw bytes power in TiB.                                                                      |
 | daily_new_terminate_rbp                   | NUMERIC  | Daily new terminated sector raw bytes power in TiB.                                                                      |
-| daily_new_active_terminate_rbp            | NUMERIC  | Dailly raw bytes power in TiB of sectors that are scheduled to expire, but have been terminated actively by SPs.                            |
-| daily_new_passive_terminate_rbp            | NUMERIC  | Dailly raw bytes power in TiB of sectors that are scheduled to expire, but have been terminated passively after 42 days.                            |
-| daily_new_extend_rbp              | NUMERIC  | Dailly raw bytes power in TiB of sectors that are scheduled to expire but got extended during the last 24 hours.                           |
-| daily_new_extend_qap          | NUMERIC  | Daily quality-adjusted power in TiB of Sectors that are scheduled to expire but got extended during the last 24 hours. |
+| daily_new_active_terminate_rbp            | NUMERIC  | Daily raw bytes power in TiB of sectors that are terminated actively by SPs.                            |
+| daily_new_passive_terminate_rbp            | NUMERIC  | Daily raw bytes power in TiB of sectors that are terminated passively after 42 days in fault.                            |
+| daily_new_extend_rbp              | NUMERIC  | Daily raw bytes power in TiB of sectors that are extended.                      |
+| daily_new_extend_qap          | NUMERIC  | Daily quality-adjusted power in TiB of Sectors that are extended. |
 
 #### Response Example
 
