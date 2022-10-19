@@ -6,12 +6,12 @@ sidebar_position: 3
 
 ## V2.1.0 on October 19, 2022
 
-[/v2/storage_provider/basic_info](https://docs.spacescope.io/storage_provider/basic_info) now available.
-[/v2/storage_provider/rewards](https://docs.spacescope.io/storage_provider/rewards) now available.
-[/v2/storage_provider/token_balance](https://docs.spacescope.io/storage_provider/token_balance) now available.
-[/v2/storage_provider/power](https://docs.spacescope.io/storage_provider/power) now available.
-[/v2/storage_provider/deals](https://docs.spacescope.io/storage_provider/deals) now available.
-[/v2/storage_provider/gas](https://docs.spacescope.io/storage_provider/gas) now available.
+[/v2/storage_provider/basic_info](https://docs.spacescope.io/storage_provider/basic_info) now available.  
+[/v2/storage_provider/rewards](https://docs.spacescope.io/storage_provider/rewards) now available.  
+[/v2/storage_provider/token_balance](https://docs.spacescope.io/storage_provider/token_balance) now available.  
+[/v2/storage_provider/power](https://docs.spacescope.io/storage_provider/power) now available.  
+[/v2/storage_provider/deals](https://docs.spacescope.io/storage_provider/deals) now available.  
+[/v2/storage_provider/gas](https://docs.spacescope.io/storage_provider/gas) now available.  
 
 ## V2.0.0 on September 7, 2022
 
