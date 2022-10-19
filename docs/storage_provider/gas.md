@@ -140,7 +140,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/storage_provider/gas
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | stat_date                      | DATE     | Refers to the date the data was recorded.                                                                                                         |
 | miner_id           | STRING  | Unique ID of the storage provider.  |
-| base_tx_fee          | NUMERIC  | The cumulative amount in attoFIL burned as base fee by the storage provider.                                                                                        |
+| base_tx_fee          | NUMERIC  | The cumulative amount in attoFIL burned as base fee (including batch fee) by the storage provider.                                                                                        |
 | over_estimation_burn             | NUMERIC  | The cumulative amount in attoFIL burned as overestimation burn by the storage provider.                                                                                     |
 | batch_fee | NUMERIC | The cumulative amount in attoFIL burned as PreCommit or ProveCommit Batch Fee by the storage provider. |
 | miner_tip | NUMERIC | The cumulative amount in attoFIL the storage provider has received for executing blockchain messages. |
