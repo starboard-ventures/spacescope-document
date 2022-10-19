@@ -3,8 +3,6 @@ sidebar_position: 1
 ---
 # Basic Info
 
-#### Description
-
 Basic information on the storage providers.
 
 #### Request URL

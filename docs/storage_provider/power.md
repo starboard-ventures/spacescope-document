@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Power
 
-#### Description
-
 Information on storage power and capacity of the storage provider.
 
 #### Request URL
