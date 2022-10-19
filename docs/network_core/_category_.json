@@ -1,0 +1,8 @@
+{
+  "label": "Network Core",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Network Core provides an overview of the Filecoin Network through tracking various important metrics and providing insights on how the ecosystem changes over time."
+  }
+}

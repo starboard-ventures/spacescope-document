@@ -1,0 +1,8 @@
+{
+    "label": "Storage Provider",
+    "position": 5,
+    "link": {
+      "type": "generated-index",
+      "description": "Storage Providers provide information on the storage providers (also known as miners) in Filecoin Network, including rewards, balance, power, deals, gas, sectors, etc."
+    }
+  }
