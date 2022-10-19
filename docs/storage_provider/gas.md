@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 # Gas
@@ -196,10 +196,6 @@ GET: /storage_provider/gas/commit_fee
 
 <details><summary>Code</summary>
 <div>
-
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"

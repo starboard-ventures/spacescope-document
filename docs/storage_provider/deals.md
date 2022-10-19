@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 5
 ---
 
 # Deals
@@ -204,9 +204,6 @@ GET: /storage_provider/deals/client_count
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -373,10 +370,6 @@ GET: /storage_provider/deals/deal_size
 
 <details><summary>Code</summary>
 <div>
-
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"
@@ -550,9 +543,6 @@ GET: /storage_provider/deals/deal_collateral
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -717,9 +707,6 @@ GET: /storage_provider/deals/deal_duration
 <div>
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
   groupId="language"
   defaultValue="Python"
@@ -878,10 +865,6 @@ GET: /storage_provider/deals/deal_revenue
 
 <details><summary>Code</summary>
 <div>
-
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="language"

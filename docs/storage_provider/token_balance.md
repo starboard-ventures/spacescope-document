@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 4
 ---
 
-### Token Balance
+# Token Balance
 
 #### Description
 
