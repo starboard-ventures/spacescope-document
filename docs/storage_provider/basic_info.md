@@ -14,7 +14,6 @@ GET: /storage_provider/basic_info
 #### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| state_date   | STRING   | Selected date (Optional).  | 2022-10-01  | If no state_date is input, returns data for the most recent date available. |
 | miner_id     | STRING   | Selected ID of the miner (Optional).   | f0110804  | Returns data for all miners if no miner_id is input. |
 
 #### Request Examples
@@ -131,7 +130,6 @@ curl --location --request GET 'https://api.spacescope.io/v2/storage_provider/bas
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date                      | DATE     | Refers to the date the data was recorded.                                                                                                         |
 | miner_id           | STRING  | Unique ID of the storage provider.  |
 | onboarding_at          | TIMESTAMP  | The earliest timestamp that the storage provider first recorded in the network.                                                                                        |
 | sector_size             | BIGINT  | Size of a sector (32GiB or 64GiB, in bytes) of the storage provider.                                                                                     |
