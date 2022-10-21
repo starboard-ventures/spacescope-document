@@ -4,8 +4,6 @@ sidebar_position: 4
 
 # Token Balance
 
-#### Description
-
 Information on token balance of the storage provider. 
 
 #### Request URL

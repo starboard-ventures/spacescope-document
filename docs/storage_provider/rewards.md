@@ -4,8 +4,6 @@ sidebar_position: 3
 
 # Rewards
 
-#### Description
-
 Information on Filecoin block rewards received by the storage provider.
 
 #### Request URL
