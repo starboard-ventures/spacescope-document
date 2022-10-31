@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Version History
 
+## V2.1.1 on October 31, 2022
+
+[/v2/storage_provider/sector](https://docs.spacescope.io/storage_provider/sector) now available.  
+
 ## V2.1.0 on October 19, 2022
 
 [/v2/storage_provider/basic_info](https://docs.spacescope.io/storage_provider/basic_info) now available.  
