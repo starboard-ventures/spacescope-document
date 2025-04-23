@@ -90,10 +90,11 @@ const config = {
         title: 'Spacescope',
         hideOnScroll: true,
         items: [
-          {
-            type: 'search',
-            position: 'right',
-          },
+          // Temporarily remove search
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
           {
             type: 'doc',
             docId: 'intro',
@@ -158,21 +159,22 @@ const config = {
 
       }
     }),
-  themes: [
-    [
-      "@easyops-cn/docusaurus-search-local",
-      {
-        hashed: true,
-        language: ["en", "zh"],
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
-        indexDocs: true,
-        indexBlog: false,
-        indexPages: false,
-        docsRouteBasePath: '/'
-      },
-    ],
-  ],
+  // Temporarily disable the search plugin
+  // themes: [
+  //   [
+  //     "@easyops-cn/docusaurus-search-local",
+  //     {
+  //       hashed: true,
+  //       language: ["en", "zh"],
+  //       highlightSearchTermsOnTargetPage: true,
+  //       explicitSearchResultPath: true,
+  //       indexDocs: true,
+  //       indexBlog: false,
+  //       indexPages: false,
+  //       docsRouteBasePath: '/'
+  //     },
+  //   ],
+  // ],
 
 };
 
