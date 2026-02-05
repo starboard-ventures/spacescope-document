@@ -21,3 +21,4 @@ The Spacescope API is divided into several categories: **`Power`**, **`Economics
 | /v2/gas/* | Endpoints that return data related to network usage and network fees of the Filecoin Network.                                      |
 | /v2/circulating_supply/* | Endpoints that return data of token circulating supply on the Filecoin Network.                                                        |
 | /v2/storage_provider/* | Endpoints that return data on the storage providers (also known as miners) in Filecoin Network, including rewards, balance, power, deals, gas, sectors, etc. |
+| /v2/fvm/* | Endpoints that return data about the Filecoin Virtual Machine.                                                        |
