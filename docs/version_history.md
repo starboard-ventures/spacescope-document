@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Version History
 
+## V2.1.2 on June 1, 2025
+
+[/v2/fvm/contracts](https://docs.spacescope.io/category/fvm/contracts) now available.
+
 ## V2.1.1 on October 31, 2022
 
 [/v2/storage_provider/sector](https://docs.spacescope.io/storage_provider/sectors) now available.  
